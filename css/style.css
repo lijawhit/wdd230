@@ -24,15 +24,19 @@ header {
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
+    width: 600px;
+    border-radius: 10px;
 }
 
 header img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 header h1 {
     padding: 50px;
+    text-align: center;
 }
 
 h2 {
@@ -45,6 +49,21 @@ footer {
     padding: .5rem;
     background-color: #eee;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
+    width: 600px;
+    border-radius: 10px;
 }
+
+footer h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: .8rem;
+    text-align: center;
+    color: black;
+}
+
+
