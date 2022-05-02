@@ -1,0 +1,13 @@
+@media screen and (min-width: 32.5em){
+    header {
+        color: red;
+    }
+    
+    body {
+        color: blue;
+    }
+
+    footer {
+        color: Green;
+    }
+}

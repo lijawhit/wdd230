@@ -8,7 +8,6 @@ body {
     margin: auto;
     display: grid;
     font-size: 16px;
-    width: 1000px;
 }
 
 header, main, footer {
