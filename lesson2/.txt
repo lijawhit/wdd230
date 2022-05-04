@@ -1,0 +1,9 @@
+:root {
+    --color1: #FFFFFF;
+    --color2: #002244;
+    --color3: #f46a1f;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@300&display=swap');
+
+'Anek Gujarati
