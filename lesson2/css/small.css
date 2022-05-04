@@ -8,7 +8,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-columns: 1fr;
     font-family: 'Anek Gujarati', sans-serif;
     font-size: .9rem;
     max-width: 100%;
@@ -17,7 +17,8 @@ body {
 
 header,
 footer {
-    grid-column: 2;
+    text-align: center;
+    grid-column: 1;
     background-color: var(--color2);
     color: white;
 }
@@ -27,7 +28,7 @@ footer {
 }
 
 main {
-    grid-column: 2;
+    grid-column: 1;
     margin-left: 2rem;
     margin-right: 2rem;
     text-align: center;
@@ -40,7 +41,6 @@ main {
     background-color: var(--color3);
     border: 1px solid var(--color2);
     border-radius: 1em;
-    
 }
 
 .design2 {
@@ -65,7 +65,6 @@ h1 {
 }
 
 header h2 {
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -91,7 +90,7 @@ footer p {
 }
 
 img {
-    width: 20rem;
+    width: 15rem;
     display: flex;
     margin: .8rem;
     border-radius: 1rem;
