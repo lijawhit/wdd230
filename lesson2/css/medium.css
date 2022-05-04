@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 45rem) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -19,13 +19,7 @@
         grid-row: 2;
     }
     h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 3.5rem;
-    }
-    p,
-    a:link {
         font-size: 1.5rem;
     }
+
 }
