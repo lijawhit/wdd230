@@ -92,6 +92,6 @@ footer p {
 img {
     width: 15rem;
     display: flex;
-    margin: .8rem;
+    margin: auto;
     border-radius: 1rem;
 }
