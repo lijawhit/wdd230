@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    margin: auto;
+}
+
+header {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: url();
+}
+
+header h1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.headerimg {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+main {
+    grid-column: 2;
+}
+
+footer {
+    grid-column: 2;
+}
