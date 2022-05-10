@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr;
     margin: auto;
 }
 
@@ -8,8 +9,11 @@ header {
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background: url();
+    grid-template-rows: 2fr 1fr;
+    background: url(https://lijahwhit.github.io/wdd230/lesson3/images/headerimg.jpg);
+    background-size: cover;
+    
+    
 }
 
 header h1 {
