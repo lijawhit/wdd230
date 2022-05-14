@@ -28,7 +28,6 @@ header,
 footer {
     background-color: var(--color1);
     color: var(--color5);
-    text-align: center;
     padding: .5rem;
 }
 
@@ -93,6 +92,7 @@ section{
 
 footer {
     font-size: .8rem;
+    text-align: center;
 }
 
 footer h3 {
