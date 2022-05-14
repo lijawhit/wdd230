@@ -19,7 +19,6 @@ body {
 }
 
 .content {
-    max-width: 95%;
     display: grid;
     margin: 0 auto;
     background-color: var(--color3);
@@ -100,125 +99,98 @@ footer h3 {
     font-family: 'Rye', sans-serif;
 }
 
+
 /* Target audience */
 
-.audience{
-    padding: 0 2em;
-    border-bottom: 1px #ccc solid;
-}
-
-.personas{
+.pers{
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
 }
 
-.personas h3{
+.pers h3{
     grid-column: 1/-1;
 }
 
-.personas div{
-    border: 1px #ccc solid;
-    border-radius: .5em;
+.pers div{
+    border: 1px var(--color4) solid;
     padding: .5em 1em;
 }
 
-.personas div h4{
-    text-decoration: underline;
-    text-decoration-color: #546A7B;
-    text-decoration-thickness: .2em;
-    text-underline-position: under;
-}
-
-.scenarios dl{
+.scen dl{
     text-align: left;
     padding: 1em;
     margin: 0 2em;
 }
 
-.scenarios dl dt{
+.scen dl dt{
     font-weight: bold;
 }
 
-/* color scheme */
+/* Color Scheme */
 
-.color-scheme table{
+.color-table table{
     margin: 0 auto;
     width: 80%;
     border-spacing: .2em;
 }
 
-.color-scheme table tr td{
+.color-table table tr td{
     border: 1px #555 solid;
     border-radius: .5em;
     padding: .5em;
 }
 
-.color-scheme table tr td:nth-of-type(1){
+.color-table table tr td:nth-of-type(1){
     font-weight: bold;
 }
 
-.color-scheme table tr td:nth-of-type(2) {
+.color-table table tr td:nth-of-type(2) {
     color: #fff;
     font-weight: bold;
 }
 
-.primary-color{
-    background-color: #393d3f;
+.color1 {
+    background-color: var(--color1);
 }
 
-.secondary-color {
-    background-color: #c6c5b9;
+.color2 {
+    background-color: var(--color2);
 }
 
-.accent1-color {
-    background-color: #62929e;
+.color3 {
+    background-color: var(--color5);
 }
 
-.accent2-color {
-    background-color: #546a7b;
+.color4 {
+    background-color: var(--color4);
 }
 
 /* Typography */
-.typography{
+.typo{
     padding: 2em;
 }
 
-.typography p{
+.typo p{
     padding: 0 3em;
 }
 
-.typography div>h3{
-    text-decoration: underline;
-    text-decoration-color: #546A7B;
-    text-decoration-thickness: .2em;
-    text-underline-position: under;
-}
-
-.typography div ul{
+.typo div ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
 }
 
-.typography div ul li{
-    border: 1px #555 solid;
-    border-radius: .5em;
+.typo div ul li{
+    border: 1px var(--color4) solid;
     flex-grow: 1;
-    margin: .3em;
-    padding: 0 .5em;
+    margin: .3rem;
+    padding: 0 .5rem;
 }
 
-footer a {
-    color: #FFFFFF;
-}
 
-footer p:last-of-type {
-    color: #FFEFB8;
-    font-weight: 400;
-}
 
 @media screen and (max-width: 480px) {
 
