@@ -12,7 +12,13 @@
         align-items: center;
     }
 
+    header {
+        display: grid;
+        grid-template-columns: 150px 2fr;
+    }
+
     header h1 {
+        font-size: 2rem;
         padding: 0 0 0 50px;
     }
     
