@@ -1,13 +1,10 @@
-@media screen and (min-width: 32.5em){
-    header {
-        color: red;
-    }
-    
-    body {
-        color: blue;
+@media only screen and (min-width: 35rem) {
+    header h1 {
+        font-size: 2em;
+        padding: 50px;
     }
 
-    footer {
-        color: Green;
+    header img {
+        width: 100%;
     }
 }
