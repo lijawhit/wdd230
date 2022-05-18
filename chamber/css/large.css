@@ -2,6 +2,7 @@
     nav {
         flex-direction: row-reverse;
     }
+
     nav ul {
         width: 80%;
     }
@@ -9,13 +10,16 @@
     .nava {
         display: flex;
     }
+
     .nava li {
-        display: block; /* change state in small view */
+        display: block;
         flex: 1 1 auto;
     }
+
     .nava a {
         text-align: center;
     }
+
     .nava li:first-child {
         display: none;
     }

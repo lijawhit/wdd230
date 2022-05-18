@@ -48,6 +48,15 @@ header h1 {
     font-size: 1.5rem;
 }
 
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main h1 {
+    font-size: 1.6em;
+}
+
 .date {
     grid-column: 2;
     grid-row: 2;
@@ -114,36 +123,35 @@ nav ul li.active a {
 	display: block;
 }
 
-
-body {
-    font-family: var(--font2);
-}
-
-main {
-    padding: 0 2%;
-    min-height: 10rem;
-    color: var(--main-font-color);
-}
-
-main h1 {
-    font-size: 1.6em;
-    color: var(--main-headings-color);
-}
-main h2 {
-    color: #31c469;
-}
-
-
 .content {
-display: grid;
-grid-template-columns: 1fr;
-padding: 1rem 2%;
-grid-gap: 10px;
-}
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 2%;
+    grid-gap: 10px;
+    }
 
 section {
-    border: 1px solid silver;
+    border: 1px solid var(--color4);
     margin: 0.2em;
     padding: 0.5em;
     min-height: 10em;
+}
+
+footer {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-box {
+    padding-bottom: 10px;
+}
+
+footer h3 {
+    padding: 10px;
+}
+
+hr {
+    border: .1px solid var(--color4);
 }
