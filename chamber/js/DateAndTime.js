@@ -17,6 +17,8 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
 datefield.innerHTML = `${fulldate}`;
+
+
 }
 
 

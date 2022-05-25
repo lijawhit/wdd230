@@ -26,5 +26,28 @@
         padding: 0 0 10px 50px;
     }
 
+    .welcome {
+        grid-column: ;
+        grid-row: ;
+    }
 
+    .event {
+        grid-column: ;
+        grid-row: ;
+    }
+
+    .weather {
+        grid-column: ;
+        grid-row: ;
+    }
+
+    .news {
+        grid-column: ;
+        grid-row: ;
+    }
+
+    .spotlights {
+        grid-column: ;
+        grid-row: ;
+    }
 }
