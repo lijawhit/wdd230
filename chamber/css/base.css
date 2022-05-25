@@ -20,6 +20,17 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     margin: 0;
 }
 
+body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #091c25;
+}
+
+.all {
+    width: 90vw;
+}
+
 header, footer{
     background: var(--color1);
     font-family: var(--font2);
@@ -47,15 +58,6 @@ header h1 {
     grid-row: 1;
     align-self: center;
     font-size: 1.5rem;
-}
-
-main {
-    padding: 0 5%;
-    min-height: 10rem;
-}
-
-main h1 {
-    font-size: 1.6em;
 }
 
 .date {
@@ -124,12 +126,21 @@ nav ul li.active a {
 	display: block;
 }
 
+main {
+    padding: 0 1%;
+    min-height: 10rem;
+}
+
+main h1 {
+    font-size: 1.6em;
+}
+
 .content {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1rem 2%;
     grid-gap: 10px;
-    }
+}
 
 section {
     border: 1px solid var(--color5);
@@ -191,23 +202,60 @@ section {
 
 .event {
     grid-row: 2;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 .weather {
     grid-row: 3;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.weather-box {
+    font-size: 2em;
+}
+
+.weather-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 }
 
 .news {
     grid-row: 4;
 }
 
+
 .spotlights {
     grid-row: 5;
+    
 }
 
+.spotlights img {
+    border-radius: 16px;
+}
+
+.spotlight1 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.spotlight2 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
 
 .join {
     display: none;
+}
+
+.join p {
+    padding: 10px;
 }
 
 .center-text {
@@ -231,5 +279,18 @@ footer h3 {
 }
 
 hr {
-    border: .1px solid var(--color4);
+    border: .1px solid var(--color5);
+    width: 90%;
+}
+
+.announcement-banner {
+    min-height: 5em;
+    font-size: 1.1em;
+    background-color: var(--color6);
+    color: var(--color5);
+    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
 }
