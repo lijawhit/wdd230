@@ -44,13 +44,26 @@
         grid-row: 2;
     }
 
+    .join {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .join-button {
+        grid-row: 1;
+        width: 90%;
+    }
+
     .news {
-        grid-column: 2/4;
+        grid-column: 3/4;
         grid-row: 3;
     }
 
     .spotlights {
+        display: block;
         grid-column: 3;
         grid-row: 1/3;
     }
+
+    
 }

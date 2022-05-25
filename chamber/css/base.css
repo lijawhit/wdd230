@@ -8,6 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --color3: #FFFFFF;
     --color4: #B4AC99;
     --color5: #000000;
+    --color6: #f5d451;
 
     --font1: 'Rye', sans-serif;
     --font2: 'Roboto Condensed', sans-serif;
@@ -49,7 +50,7 @@ header h1 {
 }
 
 main {
-    padding: 0 2%;
+    padding: 0 5%;
     min-height: 10rem;
 }
 
@@ -131,10 +132,12 @@ nav ul li.active a {
     }
 
 section {
-    border: 1px solid var(--color4);
+    border: 1px solid var(--color5);
     margin: 0.2em;
     padding: 0.5em;
     min-height: 10em;
+    background-color: var(--color4);
+    box-shadow: 0px 0px 2px var(--color5);
 }
 
 .welcome {
@@ -149,33 +152,67 @@ section {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    filter: brightness(75%);
 }
 
 .welcome h2 {
     position: absolute;
+    text-shadow: 2px 2px var(--color5);
     margin: 1.5rem;
-    color: var(--color1);
+    color: var(--color3);
+    font-weight: bold;
+    font-size: 2rem;
 }
 
-.welcome button {
+.welcome-button {
     position: absolute;
     right: 2rem;
     bottom: 1rem;
 }
 
+
+.button {
+    padding: 0.7rem;
+    border-radius: 15px;
+    background-color: var(--color6);
+    color: var(--color5);
+    border: 1px solid var(--color5);
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 4px, rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: var(--color2);
+    color: var(--color3);
+    cursor: pointer;
+}
+
 .event {
+    grid-row: 2;
 }
 
 .weather {
+    grid-row: 3;
 }
 
 .news {
+    grid-row: 4;
 }
 
 .spotlights {
+    grid-row: 5;
 }
 
 
+.join {
+    display: none;
+}
+
+.center-text {
+    text-align: center;
+}
 
 
 footer {
