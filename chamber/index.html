@@ -17,7 +17,7 @@
     </div>
     <div class="all">
       <header>
-        <img class="logo" src="images/c-logo.png" alt="" width="150rem">
+        <img class="logo" src="images/c-logo.webp" alt="" width="150rem">
         <h1>The Williamsburg Chamber</h1>
         <div class="date"></div>
         <nav>
@@ -41,7 +41,12 @@
         <div class="content">
 
           <section class="welcome">
-            <img src="images/welcome.jpg" alt="Image of Colonial Williamsburg">
+            <!-- <img src="images/welcome.jpg" alt="Image of Colonial Williamsburg"> -->
+            <picture class="hero-img">
+              <source media="(min-width: 800px)" srcset="images/large.jpg">
+              <source media="(min-width: 390px)" srcset="images/medium.jpg">
+              <img src="images/small.jpg" alt="hero-image">
+          </picture>
             <h2>Welcome to Williamsburg</h2>
             <a href="#" class="welcome-button button">Join the Chamber</a>
           </section>
@@ -83,6 +88,8 @@
               <div>74%</div>
               <div>Wind:</div>
               <div>10 mph</div>
+              <div>Windchill:</div>
+              <div><span id="windChill"></span>></div>
             </div>
           </section>
 
@@ -132,7 +139,7 @@
       <footer>
         <div class="footer-box">
           <div>
-            <img src="images/c-logo.png" alt="The Williamsburg Camber of Commerce Logo" />
+            <img src="images/c-logo.webp" alt="The Williamsburg Camber of Commerce Logo" />
             <p></p>
           </div>
           <div>
@@ -151,6 +158,7 @@
 
         <h3>&copy<span id="year"></span> Williamsburg Chamber | Elijah P. Whitchurch | WDD230 | Last Modification:  <span id="lastupdate"></span></h3>
         <script src="js/DateAndTime.js"></script>
+        <script src="js/windchill.js"></script>
       </footer>
     </div>
   </body>

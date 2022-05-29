@@ -21,11 +21,10 @@ window.onload=function(){
 	document.querySelector('#year').textContent = year;
 
 	const datefield = document.querySelector(".date");
-	const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-		now
-	);
+	const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 	datefield.innerHTML = `${fulldate}`;
 
-	window.onresize = () => {if (window.innerWidth > 1028) mainnav.classList.remove('responsive')};
-}
+};
+
+window.onresize = () => {if (window.innerWidth > 1028) mainnav.classList.remove('responsive')};
 
