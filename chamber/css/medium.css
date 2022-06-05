@@ -1,13 +1,14 @@
 @media only screen and (min-width: 35rem) {
 
     .all {
-        width: 80vw;
+        width: 80%;
     }
 
     .content {
         grid-template-columns: 1fr 1fr;
       }
-      .content section:nth-child(5) {
+
+    .content section:nth-child(5) {
         grid-column: span 2;
       }
 
@@ -77,6 +78,14 @@
         align-self: center;
         justify-self: center;
         width: 75%;
-    
     }
+
+    .discover div img:hover{
+        box-shadow: none;
+    }
+
+   .content-discover {
+       display: block;
+   }
+
 }

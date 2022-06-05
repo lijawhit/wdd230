@@ -28,7 +28,7 @@ body {
 }
 
 .all {
-    width: 90vw;
+    width: 90%;
 }
 
 header, footer{
@@ -127,7 +127,6 @@ nav ul li.active a {
 }
 
 main {
-    padding: 0 1%;
     min-height: 10rem;
 }
 
@@ -293,4 +292,68 @@ hr {
     align-items: center;
     justify-content: center; 
     width: 100%;
+}
+
+.content-discover {
+    color: #FFFFFF;
+}
+
+.discover{
+    display:grid;
+    grid-template-columns:1fr;
+    align-items: center;
+}
+
+.discover div img:hover{
+    box-shadow: none;
+}
+
+.discover-data{
+    height: 100%;
+    border-bottom:2px solid var(--color4);
+    align-self: center;
+    align-items: center;
+}
+
+.discover div img{
+    width:100%;
+}
+
+.places{
+    font-size: 35px;
+    text-align: center;
+}
+
+.discover-data:nth-child(){
+    border-bottom: none;
+}
+
+.discover-data h2{
+    margin-top:3%;
+    text-align: center;
+}
+
+.discover-data p{
+    font-size: 17px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: justify;
+}
+
+.discover div img{
+    width:100%;
+    margin-top: 8%;
+}
+
+.discover div img:hover{
+    box-shadow: 3px 2px 5px rgb(36, 36, 36);
+}
+
+.discover div img[data-src] {
+    filter: blur(0.2em);
+}
+
+.discover div img {
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
