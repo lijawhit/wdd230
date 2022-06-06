@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url("/images/space.jpg");
+    background-image: url("/wdd230/images/space.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
