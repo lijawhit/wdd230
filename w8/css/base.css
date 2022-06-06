@@ -12,8 +12,6 @@ html, body {
 
 .all {
     position: relative;
-    width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -21,13 +19,13 @@ html, body {
 .space {
     grid-column: 1/3;
     grid-row: 1;
-
 }
 
 .x-wing {
     position: relative;
     width: 100%;
     grid-row: 1;
+    justify-self: center;
     animation-name: fly;
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -36,12 +34,13 @@ html, body {
     background-image: url("wdd230/w8/images/space.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .x1 {
     left: 9vw;
     grid-column: 1;
-    animation-delay: 0.3s;
+    animation-delay: 0.1s;
 }
 
 .x2 {
@@ -51,7 +50,7 @@ html, body {
 .x3 {
     right: 9vw;
     grid-column: 3;
-    animation-delay: 0.3s;
+    animation-delay: 0.1s;
 }
 
 
