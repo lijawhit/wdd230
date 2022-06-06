@@ -10,13 +10,7 @@ html, body {
     margin: 0;
 }
 
-body {
-    background-image: url("/w8/images/space.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.space {
+.all {
     position: relative;
     width: 100%;
     height: 100%;
@@ -24,14 +18,24 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.space {
+    grid-column: 1/3;
+    grid-row: 1;
+
+}
+
 .x-wing {
     position: relative;
     width: 100%;
+    grid-row: 1;
     animation-name: fly;
     animation-duration: 2s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    background-image: url("wdd230/w8/images/space.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .x1 {
@@ -52,6 +56,6 @@ body {
 
 
 @keyframes fly {
-    from {transform: translateY(-900px) rotate(180deg);}
+    from {transform: translateY(-100vh) rotate(180deg);}
     to {transform: translateY(120vh) rotate(180deg);}
 }
