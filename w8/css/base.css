@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url("/wdd230/images/space.jpg");
+    background-image: url("/w8/images/space.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,6 +19,7 @@ body {
 .space {
     position: relative;
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
