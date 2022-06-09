@@ -1,8 +1,3 @@
-:root {
-    --hi: hi;
-
-}
-
 html, body {
     height: 100%;
     width: 100%;
@@ -23,7 +18,7 @@ html, body {
 
 .x-wing {
     position: relative;
-    width: 100%;
+    width: 80%;
     grid-row: 1;
     justify-self: center;
     animation-name: fly;
@@ -31,6 +26,7 @@ html, body {
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+
 }
 
 .x1 {
@@ -49,13 +45,16 @@ html, body {
     animation-delay: 0.1s;
 }
 
-
 @keyframes fly {
     from {transform: translateY(-100vh) rotate(180deg);}
-    to {transform: translateY(120vh) rotate(180deg);}
+    to{transform: translateY(110vh) rotate(180deg)}
 }
 
 
 
-
-
+@keyframes swing {
+    0%{transform: translateY(650px) rotateZ(0deg)}
+    40%{transform: translateY(650px) rotateZ(90deg)}
+    70%{transform: translateY(650px) rotateZ(70deg)}
+    100%{transform: translateY(650px) rotateZ(75deg)}
+}
