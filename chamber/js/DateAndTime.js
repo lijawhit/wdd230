@@ -22,3 +22,8 @@ const datefield = document.querySelector(".date");
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 datefield.innerHTML = `${fulldate}`;
 
+function dateTime() {
+    return new Date().toLocaleString();
+  }
+  //store the time the page was loaded inside the form data
+  document.querySelector("#curtime").value =  dateTime();

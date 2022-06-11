@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-items: center;
     background-color: #091c25;
+    font-family: var(--font2);
 }
 
 .all {
@@ -34,6 +35,7 @@ body {
 header, footer{
     background: var(--color1);
     font-family: var(--font2);
+    border-radius: 0 0 4px 4px;
 }
 
 header {
@@ -57,7 +59,7 @@ header h1 {
     grid-column: 2;
     grid-row: 1;
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .date {
@@ -74,6 +76,8 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    
+    border-radius: 0 0 4px 4px;
 }
 nav div a {
     margin-right: 2px;
@@ -267,6 +271,7 @@ footer {
     padding: 1rem;
     text-align: center;
     font-weight: bold;
+    border-radius: 4px 4px 0 0;
 }
 
 .footer-box {
@@ -356,4 +361,111 @@ hr {
 .discover div img {
     filter: blur(0em);
     transition: filter 0.5s;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- MAIN --------------*/
+.join-main {
+    width: auto;
+    margin: auto;
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: var(--color4);
+    border-radius: 4px;
+    margin-bottom: 5%;
+}
+
+#join-h1 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+#join-p {
+    text-align: center;
+}
+
+/*----------- FORM --------------*/
+
+form fieldset {
+    margin: 2rem 0 0 0;
+    border: 1px solid var(--color1);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--color6);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color2);
+    font-size: 1.2rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--color1);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 1rem 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-top: rgba(255, 0, 0, 0.333) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-top: rgba(0, 128, 0, 0.333) solid 6px;
+}
+
+textarea {
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    resize: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
