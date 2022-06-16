@@ -22,7 +22,7 @@ function displayProphets(prophet) {
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
     bdate.textContent = `Date of Birth: ${prophet.bdate}`;
-    bdate.textContent = `Place of Birth: ${prophet.bplace}`;
+    bplace.textContent = `Place of Birth: ${prophet.bplace}`;
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     image.setAttribute('src', prophet.imageurl);
     image.setAttribute('alt', `Portait of  ${prophet.name} ${prophet.lastname} - ${prophet.order}th  Latter-day President`);
