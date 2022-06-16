@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:400,500,700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 80rem;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-family: 'asap', serif;
+    color: rgb(0, 52, 74);
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cards section {
+    background: rgb(0, 52, 74);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem rgba(0,0,0,.5);
+}
+
+.cards section h2 {
+    font-family: 'asap', serif;
+    color: #FFFFFF;
+}
+
+.cards section p {
+    font-family: 'Asap', sans-serif;
+    margin-top: .3rem;
+    font-size: .8rem;
+    color: #dbdada;
+}
+
+.cards section img {
+    width: 60%;
+    height: auto;
+    margin-top: .5rem;
+    border-radius: .5rem;
+    box-shadow: .3rem .3rem .5rem rgba(0,0,0,.5);;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(0, 54, 74);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
