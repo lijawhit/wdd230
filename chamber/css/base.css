@@ -53,7 +53,7 @@ header img {
     align-self: center;
 }
 
-.socials {
+nav div img {
     width: 50px;
 }
 
@@ -308,10 +308,8 @@ hr {
     color: #FFFFFF;
 }
 
-.discover{
-    display:grid;
-    grid-template-columns:1fr;
-    align-items: center;
+.discover {
+    display: block;
 }
 
 .discover div img:hover{
@@ -319,7 +317,6 @@ hr {
 }
 
 .discover-data{
-    height: 100%;
     border-bottom:2px solid var(--color4);
     align-self: center;
     align-items: center;

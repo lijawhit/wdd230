@@ -100,11 +100,23 @@
 
     .discover{
         display:grid;
+        grid-column: 2;
         grid-template-columns: 1fr 2fr;
         gap:20px; 
+    }
+
+        
+    .discover h2 {
+        grid-column: span 2;
+    }
+
+    .discover-data{
+        height: 100%;
     }
 
     .join-main {
         width: 50%;
     }
+
+    
 }
