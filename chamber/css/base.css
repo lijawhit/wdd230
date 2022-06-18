@@ -53,6 +53,10 @@ header img {
     align-self: center;
 }
 
+.socials {
+    width: 50px;
+}
+
 header h1 {
     padding: 0 0 0 20px;
     font-family: var(--font1);
@@ -239,6 +243,7 @@ section {
 
 .spotlights img {
     border-radius: 16px;
+    width: 175px;
 }
 
 .spotlight1 {
