@@ -71,21 +71,19 @@
           <section class="center-text weather">
             <h3>Weather</h3>
             <div class="weather-box">
-              <img
-                src="images/partly-cloudy.png"
-                alt="image of weather partly cloudy"
-              />
-              <em><span class="temp">78</span>°F</em>
+              <p>
+                Current Weather Conditions<br /><em>Temperature:</em> <span id="current-temp">...</span> &deg;F
+              </p>
+              <figure>
+                <img src="#" alt="weather-icon" id="weather-icon"/> 
+                <figcaption></figcaption>
+            </figure>  
+
             </div>
-            <h4>Partly Cloudy</h4>
             <hr>
             <div class="weather-grid">
-              <div>Precipitation:</div>
-              <div>3%</div>
-              <div>Humidity:</div>
-              <div>74%</div>
-              <div>Wind:</div>
-              <div><span class="wind">10</span> mph</div>
+              <div>Wind Speed:</div>
+              <div><span id="wind"></span> mph</div>
               <div>Windchill:</div>
               <div>
                 <span id="windchill"></span>
@@ -157,7 +155,7 @@
 
         <h3>&copy;<span id="year"></span> Williamsburg Chamber | Elijah P. Whitchurch | WDD230 | Last Modification:  <span id="lastupdate"></span></h3>
         <script src="js/DateAndTime.js"></script>
-        <script src="js/windchill.js"></script>
+        <script type="module" src="js/weatherapi.js" ></script>
       </footer>
     </div>
   </body>
