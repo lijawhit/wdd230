@@ -27,5 +27,5 @@ body {
 
 .weather-card figcaption {
   text-align: center;  
-  margin: 0;
+  margin-top: 15px;
 }
