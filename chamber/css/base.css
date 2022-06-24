@@ -63,7 +63,7 @@ header h1 {
     grid-column: 2;
     grid-row: 1;
     align-self: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .date {
@@ -80,7 +80,6 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     border-radius: 0 0 4px 4px;
 }
 nav div a {
