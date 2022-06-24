@@ -41,7 +41,6 @@ header, footer{
 header {
     display: grid;
     grid-template-columns: 80px 2fr;
-    
 }
 
 .logo {
