@@ -10,5 +10,4 @@ export default function update_windchill(){
     document.getElementById("display").style.display = "none";
     }
     document.getElementById("windchill").innerHTML= windchill;
-
 }
