@@ -7,7 +7,7 @@ const mainnav = document.querySelector('.nava')
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
 const announcementbanner = document.querySelector(".announcement-banner");
-if( now.getDay() === 1 || now.getDay() === 2){
+if( now.getDay() === 1 || now.getDay() === 2 || now.getDay() === 3){
 announcementbanner.style.display = "flex";
 }else{
 announcementbanner.style.display = "none";

@@ -471,3 +471,73 @@ textarea {
   display: table;
   clear: both;
 }
+
+
+.dir-buttons{
+    text-align: end;
+}
+#dir-btn-grid{
+    display: none;
+}
+#dir-btn-list{
+    display: none;
+}
+.dir-buttons button{
+    margin: -2em 1em 2em 1em;
+}
+.dir-buttons button:focus{
+    background-color: var(--color1);
+}
+
+.dir-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.dir-grid section {
+    color: white;
+    margin: 1em;
+    display: grid;
+    padding: .5em;
+    align-items: center;
+    justify-items: center;
+    min-height: 5em;    
+    border-radius: 4px; 
+}
+
+.dir-grid section img {
+    width: 200px;
+}
+
+.dir-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.dir-list section {
+    color: white;
+    margin-bottom: 2em;
+    padding: .5em;
+    min-height: 7em;    
+    border-radius: 4px; 
+}
+
+.dir-list section img {
+    display: none;
+}
+
+
+.content-directory {
+    justify-self: center;
+    width: 90%;
+}
+
+.content-directory h1 {
+    margin: 0.4em;
+    color: var(--color3);
+}
+
+
+
+

@@ -1,14 +1,7 @@
 @media only screen and (min-width: 35rem) {
 
-    .all {
-        width: 80%;
-    }
 
-    .content {
-        grid-template-columns: 1fr 1fr;
-      }
-
-    .content section:nth-child(5) {
+    .content-home section:nth-child(5) {
         grid-column: span 2;
       }
 
@@ -90,8 +83,47 @@
 
    .join-main {
     width: 80%;
-}
+    }
 
+    .dir-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    .dir-list section {
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1em;
+        align-items: center;
+        justify-items: center;
+    }
 
-
+    .dir-buttons{
+        text-align: end;
+    }
+    #dir-btn-grid{
+        background-image: url(../images/grid-button.png);
+        height: 75px;
+        width: 75px;
+        border-radius: 4px;
+        background-size: cover;
+        display: unset;
+    }
+    #dir-btn-list{
+        background-image: url(../images/list-button.png);
+        height: 75px;
+        width: 75px;
+        background-size: 73px 73px;
+        border-radius: 4px;    
+        background-size: cover;        
+        display: unset;
+    }
+    .dir-buttons button{
+        margin: -2em 1em 2em 1em;
+    }
+    .dir-buttons button:focus{
+        background-color: var(--color1);
+    }
 }

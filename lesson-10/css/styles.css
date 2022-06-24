@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:400,500,700");
+
+body {
+    display: grid;
+    justify-content: center;    
+    font-family: 'Asap', sans-serif;
+}
+
+.weather-card {
+    display: grid;
+    justify-items: center;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: .5em;
+    margin: 0 auto;
+    background: linear-gradient(rgb(223, 146, 233), rgb(230, 223, 193));
+}
+
+.weather-card img {
+    border: 1px solid rgba(32, 162, 238, 0.226);
+    background-color: white;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+
+.weather-card figcaption {
+  text-align: center;  
+  margin: 0;
+}
