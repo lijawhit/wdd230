@@ -503,6 +503,7 @@ textarea {
     justify-items: center;
     min-height: 5em;    
     border-radius: 4px; 
+    height: 300px;
 }
 
 .dir-grid section img {

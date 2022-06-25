@@ -16,60 +16,63 @@
         "imageurl": "images/wythe.png",
         "membership": "bronze"
        },
-       {
-        "name": "Lola's Barbeque",
-        "address": "112 S 40 E",
-        "phone": "(320) 211-5522",
-        "website": "llbarbeque.com",
-        "imageurl": "images/logo3LB.png",
-        "membership": "silver"
-       },
-       {
-        "name": "Riverside Market",
-        "address": "96 Market St",
-        "phone": "(802) 211-1152",
-        "website": "rsmarket.org",
-        "imageurl": "images/logo4RM.png",
-        "membership": "bronze"
-       },
-       {
-        "name": "West Point Aquatics",
-        "address": "71 Galvan Pier",
-        "phone": "1 (800) 441-7512",
-        "website": "westpointaquatics.org",
-        "imageurl": "images/logo5WP.png",
-        "membership": "gold"
-       },
-       {
-        "name": "Dry Oar Rafting",
-        "address": "9004 Brookside Road",
-        "phone": "1 (800) 241-5622",
-        "website": "bigraft.com",
-        "imageurl": "images/logo6BR.png",
-        "membership": "gold"
-       },
-       {
-        "name": "Outdoor Escape Park",
-        "address": "107 S 30 E",
-        "phone": "1 (800) 241-5622",
-        "website": "escapervpark.com",
-        "imageurl": "images/logo7OO.png",
-        "membership": "bronze"
-       },
-       {
-        "name": "Belle's Fine Cuisine",
-        "address": "108 S 30 E",
-        "phone": "1 (800) 241-5622",
-        "website": "bellesrestaurant.com",
-        "imageurl": "images/logo8BF.png",
-        "membership": "silver"
-       },
-       {
-        "name": "Yugi Spa",
-        "address": "134 S 2100 E",
-        "phone": "1 (800) 241-5622",
-        "website": "yugi.com",
-        "imageurl": "images/logo9Y.png",
-        "membership": "basic"
-       }]
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "imageurl": "",
+        "membership": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "imageurl": "",
+        "membership": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "imageurl": "",
+        "membership": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "imageurl": "",
+        "membership": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "imageurl": "",
+        "membership": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "imageurl": "",
+        "membership": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "imageurl": "",
+        "membership": ""
+      }
+      
+      
+      ]
     }
