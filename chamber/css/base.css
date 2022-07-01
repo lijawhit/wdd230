@@ -468,19 +468,22 @@ textarea {
   clear: both;
 }
 
-
 .dir-buttons{
     text-align: end;
 }
+
 #dir-btn-grid{
     display: none;
 }
+
 #dir-btn-list{
     display: none;
 }
+
 .dir-buttons button{
     margin: -2em 1em 2em 1em;
 }
+
 .dir-buttons button:focus{
     background-color: var(--color1);
 }
@@ -523,7 +526,6 @@ textarea {
 .dir-list section img {
     display: none;
 }
-
 
 .content-directory {
     justify-self: center;
