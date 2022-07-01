@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Rye&display=swap');
 
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
 
 :root {
     --color1: #a7453e;
@@ -9,10 +12,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --color4: #B4AC99;
     --color5: #000000;
     --color6: #f5d451;
-
     --font1: 'Rye', sans-serif;
     --font2: 'Roboto Condensed', sans-serif;
 }
+
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -117,10 +120,10 @@ nav ul li a:hover {
     color: black;
     font-weight: bold;
 }
+
 nav ul li.active a {
     background-color: var(--color3);
     color: #fff;
-    
 }
 
 .nava li:first-child {
@@ -234,7 +237,6 @@ section {
     grid-row: 4;
 }
 
-
 .spotlights {
     grid-row: 5;
     
@@ -268,7 +270,6 @@ section {
 .center-text {
     text-align: center;
 }
-
 
 footer {
     display: block;
@@ -364,11 +365,7 @@ hr {
     transition: filter 0.5s;
 }
 
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
 /*----------- MAIN --------------*/
