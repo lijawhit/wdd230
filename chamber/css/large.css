@@ -15,10 +15,6 @@
     .all {
         width: 60%;
     }
-    
-    nav {
-        flex-direction: row-reverse;
-    }
 
     nav ul {
         width: 80%;

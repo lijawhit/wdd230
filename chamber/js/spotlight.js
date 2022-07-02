@@ -7,17 +7,17 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const businesses = jsonObject['businesses'];
-    businesses.forEach(displaybusinesses);
+    
   });
 
 
-  function displaybusinesses(business) {
+  function displayspotlight(business) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let iconImg = document.createElement('img');
-    let h2 = document.createElement('h2');
-    let p1 = document.createElement('p');
-    let p2 = document.createElement('p');
+    let h3 = document.createElement('h3');
+    let hr = document.createElement('hr');
+    let p = document.createElement('p');
     let a = document.createElement('a');
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
@@ -26,41 +26,23 @@ fetch(requestURL)
     iconImg.setAttribute('loading', 'lazy');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${business.name}`;
-  
-    // Change the textContent property of the p1 element to contain the business address
-    p1.textContent = business.address;
-
-    // Change the textContent property of the p2 element to contain the business phone
-    p2.textContent = business.phone;
+    h3.textContent = `${business.name} &copy;`;
 
     // Change the textContent and href property of the a element to contain the business website
     a.textContent = 'Website Link';
     a.setAttribute('href', business.website);
+
+      
+    // Change the textContent property of the p1 element to contain the business address
+    p.textContent = `${business.phone} | ${a}`;
   
     // Add/append the section(card) with the h2 element
+    card.appendChild(h3);
     card.appendChild(iconImg);
-    card.appendChild(h2);
-    card.appendChild(p1);
-    card.appendChild(p2);
-    card.appendChild(a);
+    card.appendChild(hr)
+    card.appendChild(p);
   
     // Add/append the existing HTML div with the '.directory-grid' class with the section(card)
-    document.querySelector('.directory').appendChild(card);
+    document.querySelector('.spotlights').appendChild(card);
   }
 
-
-//handle buttons for changing from panel to list view
-const directory = document.querySelector('.directory')
-const dirgridbutton = document.querySelector('#dir-btn-grid');
-const dirlistbutton = document.querySelector('#dir-btn-list');
-
-dirgridbutton.addEventListener("click", () => {
-    directory.classList.add("dir-grid");
-    directory.classList.remove("dir-list");
-});
-
-dirlistbutton.addEventListener("click", () => {
-    directory.classList.add("dir-list");
-    directory.classList.remove("dir-grid");
-});
