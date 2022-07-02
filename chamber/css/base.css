@@ -126,6 +126,10 @@ nav ul li.active a {
     color: #fff;
 }
 
+.nava {
+    margin-left: 2%;
+}
+
 .nava li:first-child {
 	display: block;
 }
@@ -237,6 +241,10 @@ section {
     grid-row: 4;
 }
 
+.news-content h3 {
+    font-size: 25px;
+}
+
 .spotlights {
     grid-row: 5;
     
@@ -289,7 +297,7 @@ footer h3 {
 
 hr {
     border: .1px solid var(--color5);
-    width: 90%;
+    width: 100%;
 }
 
 .announcement-banner {
@@ -312,18 +320,10 @@ hr {
     display: block;
 }
 
-.discover div img:hover{
-    box-shadow: none;
-}
-
 .discover-data{
     border-bottom:2px solid var(--color4);
     align-self: center;
     align-items: center;
-}
-
-.discover div img{
-    width:100%;
 }
 
 .places{
@@ -332,7 +332,7 @@ hr {
 }
 
 .discover-data h2{
-    margin-top:3%;
+    margin-top: 3%;
     text-align: center;
 }
 
@@ -343,13 +343,13 @@ hr {
     text-align: justify;
 }
 
+.discover div {
+    align-self: center;
+}
+
 .discover div img{
     width:100%;
     margin-top: 8%;
-}
-
-.discover div img:hover{
-    box-shadow: 3px 2px 5px rgb(36, 36, 36);
 }
 
 .discover div img[data-src] {
@@ -369,7 +369,7 @@ hr {
     padding: 0 2%;
     background-color: var(--color4);
     border-radius: 4px;
-    margin-bottom: 5%;
+    margin: 5% auto 5% auto;
 }
 
 #join-h1 {
@@ -530,6 +530,10 @@ textarea {
     color: var(--color3);
 }
 
+.yellow {
+    color: var(--color6);
+    font-weight: bold;
+}
 
 
 

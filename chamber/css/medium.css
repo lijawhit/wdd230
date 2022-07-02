@@ -1,10 +1,6 @@
 @media only screen and (min-width: 35rem) {
 
 
-    .content-home section:nth-child(5) {
-        grid-column: span 2;
-      }
-
     .footer-box {
         display: flex;
         justify-content: space-between;
@@ -23,6 +19,10 @@
     
     .date {
         padding: 0 0 10px 50px;
+    }
+
+    .content-home {
+        grid-template-columns: 1fr 1fr;
     }
 
     .welcome {
@@ -47,6 +47,7 @@
 
     .spotlights {
         display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-column: 1/3;
         grid-row: 3;
     }
@@ -73,13 +74,13 @@
         width: 75%;
     }
 
-    .discover div img:hover{
-        box-shadow: none;
-    }
-
    .content-discover {
        display: block;
    }
+
+   .discover div img{
+    margin-top: 0%;
+}
 
    .join-main {
     width: 80%;
@@ -87,7 +88,7 @@
 
     .dir-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         align-items: center;
     }
     

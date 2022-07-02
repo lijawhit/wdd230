@@ -35,7 +35,7 @@ fetch(requestURL)
     p2.textContent = business.phone;
 
     // Change the textContent and href property of the a element to contain the business website
-    a.textContent = business.website;
+    a.textContent = 'Website Link';
     a.setAttribute('href', business.website);
   
     // Add/append the section(card) with the h2 element
