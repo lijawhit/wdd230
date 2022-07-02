@@ -331,10 +331,6 @@ hr {
     text-align: center;
 }
 
-.discover-data:nth-child(){
-    border-bottom: none;
-}
-
 .discover-data h2{
     margin-top:3%;
     text-align: center;
