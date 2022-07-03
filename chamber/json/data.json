@@ -6,7 +6,7 @@
         "phone": "(757) 229-2504",
         "website": "https://branscome.com",
         "imageurl": "images/branscome.png",
-        "membership": "silver"
+        "membership": "bronze"
        },
        {
         "name": "Wythe Candy & Gourmet Shop",
@@ -14,7 +14,7 @@
         "phone": "(757) 229-4406",
         "website": "https://www.facebook.com/wythecandy/",
         "imageurl": "images/wythe.png",
-        "membership": "bronze"
+        "membership": "Gold"
        },
       {
         "name": "Busch Gardens",
@@ -54,7 +54,7 @@
         "phone": "(757) 808-5880",
         "website": "http://www.roomescapewilliamsburg.com/",
         "imageurl": "images/escape-logo.png",
-        "membership": "bronze"
+        "membership": "np"
       },
       {
         "name": "Ripley's Believe It or Not!",
