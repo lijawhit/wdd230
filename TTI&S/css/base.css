@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Gentium+Basic:ital@0;1&family=Lato:wght@300&display=swap');
+
+
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+:root {
+    --color1: #1D3555;
+    --color2: #C5F1FF ;
+    --color3: #545353 ;
+    --color4: #FFFFFF ;
+    --color5: #F89E3E ;
+    --color6: #000000;
+    --font1: 'Cinzel', sans-serif;
+    --font2: 'Gentium Basic', sans-serif;
+    --font3: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr;
+    grid-template-rows: 60px;
+    align-items: center;
+}
+
+/* TEMPLE */
+header img:nth-child(1) {
+    width: 100%;
+    grid-row: 1/5;
+    grid-column: 1/-1;
+    filter: brightness(70%);
+    z-index: 0;
+}
+
+/* LOGO */
+header img:nth-child(2){
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-btn {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 10;
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+}
+
+.menu-btn__burger {
+    width: 25px;
+    height: 3px;
+    background: var(--color4);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: var(--color4);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-8px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(8px);
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    background-color: var(--color4);
+    width: 280px;
+    padding: 20px 0 81px;
+    top: 60px;
+}
+
+nav {
+    left: -280px;
+    color: var(--color6);
+    height: 100%;
+
+    transition: all .3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li > a {
+    display: block;
+    color: var(--color6);
+    padding: 11px 56px 11px 18px;
+    text-decoration: none;
+}
+
+.slide {
+    transform: translateX(280px);
+    transition: all .3s ease-in-out;
+}
+
