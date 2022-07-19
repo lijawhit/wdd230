@@ -21,8 +21,8 @@ function choosespotlight(temples){
   const tomorrow = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(secondDay);  
   const dayAfterTomorrow = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(thirdDay);
 
-  // const jsonTemple = Math.floor(Math.random() * 4);
-  const jsonTemple = 2
+  const jsonTemple = Math.floor(Math.random() * 4);
+  // const jsonTemple = 2
 
   displayspotlight(temples[jsonTemple])
   displayweather(temples[jsonTemple], today, "box1", 0)
@@ -36,24 +36,22 @@ function displayspotlight(temple) {
   let card = document.createElement('div')
   let h2 = document.createElement('h2');
   let img = document.createElement('img');
-  let h4 = document.createElement('h4');
   let p = document.createElement('p');
 
   card.setAttribute('class', 'spotlight')
 
-  h2.innerHTML = `Temple Spotlight`
+  h2.innerHTML = `Temple Spotlight<br><em>${temple.city}, ${temple.country}</em>`
 
   img.setAttribute('src', temple.image);
   img.setAttribute('alt', `Icon image for ${temple.name}`);
   img.setAttribute('loading', 'lazy');
 
-  h4.innerHTML = `${temple.city}<br><em>${temple.country}</em>`
+  // h4.innerHTML = `${temple.city}<br><em>${temple.country}</em>`
 
   p.textContent = temple.about;
 
   card.appendChild(h2);
   card.appendChild(img);
-  card.appendChild(h4);
   card.appendChild(p);
 
   document.querySelector('.spotlight-temple').appendChild(card);

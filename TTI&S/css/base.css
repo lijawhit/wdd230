@@ -278,24 +278,22 @@ main {
     grid-column: 1/3;
 }
 
+.spotlight em {
+    font-size: 1rem;
+}
+
 .spotlight img{
     width: 100%;
     grid-column: 1;
-    grid-row: 3/4;
+    grid-row: 2;
     border-radius: 5px;
     filter: brightness(80%);
     align-self: center;
 }
 
-.spotlight h4 {
-    grid-column: 1/3;
-    grid-row: 2;
-}
-
 .spotlight p {
     grid-column: 2;
-    grid-row: 3;
-    padding: 0 .5rem 0 .5rem;
+    grid-row: 2;
 }
 
 /* HR */
