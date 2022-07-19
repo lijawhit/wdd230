@@ -1,0 +1,69 @@
+{"temples": [
+      {
+        "name": "Tokyo Jampan Temple",
+        "image": "images/temples/tokyo.jpg",
+        "city": "Tokyo",
+        "country": "Japan",
+        "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
+        "phone": "(81) 3-4545-3000",
+        "email": "",
+        "services": "Clothing rental available No cafeteria available Patron housing available Distribution center nearby",
+        "history": "",
+        "ordinance-schedule": "",
+        "session-schedule": "",
+        "temple-closure-schedule": "",
+        "about": "This is the 20th constructed and 18th operating temple. Located in Minato, Tokyo, Japan, it was the first temple built in Asia.",
+        "weatherId": "Tokyo"
+       },
+      {
+        "name": "San Jose, Costa Rica Temple",
+        "image": "images/temples/san-jose.jpg",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "address": "Metros Oeste de 600, Heredia Province, Belén, 40702, Costa Rica",
+        "phone": "(506) 2293-6681",
+        "email": "",
+        "services": "No clothing rental available No cafeteria available No patron housing available Distribution center nearby",
+        "history": "",
+        "ordinance-schedule": "",
+        "session-schedule": "",
+        "temple-closure-schedule": "",
+        "about": "This temple is the 87th operating temple. It was announced on March 17, 1999 that a temple would be built in San José, Costa Rica.",
+        "weatherId": "Heredia Costa Rica"
+      },
+      {
+        "name": "San Diego ",
+        "image": "images/temples/san-diego.jpg",
+        "city": "San Diego, California",
+        "country": "United States",
+        "address": "7474 Charmant Dr, San Diego CA 92122-5000, United States",
+        "phone": "(1) 858-622-0991",
+        "email": "",
+        "services": "Clothing rental available No cafeteria available No patron housing available Distribution center nearby",
+        "history": "",
+        "ordinance-schedule": "",
+        "session-schedule": "",
+        "temple-closure-schedule": "",
+        "about": "This Temple is the 47th constructed and 45th operating temple. Located near the La Jolla community of San Diego, it was built with two main spires, but unique to this temple are four smaller spires at the base of each main spire",
+        "weatherId": "San Diego"
+      },
+      {
+        "name": "Rome Italy Temple",
+        "image": "images/temples/rome.jpg",
+        "city": "Rome",
+        "country": "Italy",
+        "address": "Via di Settebagni 376, Rome RM, Italy",
+        "phone": "",
+        "email": "",
+        "services": "Clothing rental available No cafeteria available Patron housing available Distribution center nearby",
+        "history": "",
+        "ordinance-schedule": "",
+        "session-schedule": "",
+        "temple-closure-schedule": "",
+        "about": "",
+        "weatherId": "Rome"
+      }
+      
+      ]
+}
+

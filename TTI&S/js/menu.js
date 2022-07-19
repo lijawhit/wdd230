@@ -1,20 +1,36 @@
 const menuBtn = document.querySelector('.menu-btn');
+const blurDiv = document.querySelector('.blurDiv');
 let menuOpen = false;
-menuBtn.addEventListener('click', () => {
+
+blurDiv.addEventListener('click', () => menuFunction());
+menuBtn.addEventListener('click', () => menuFunction());
+
+
+function menuFunction(){
+
     if(!menuOpen) {
         menuBtn.classList.add('open');
         menuOpen = true;
+        
+        document.querySelector('.blurDiv').classList.add('blur');
+
     } else {
         menuBtn.classList.remove('open');
         menuOpen = false;
+        
+        document.querySelector('.blurDiv').classList.remove('blur');
     }
-});
-
-let hambutton = document.querySelector('.menu');
+};
+  
 const mainnav = document.querySelector('nav')
+blurDiv.addEventListener('click', () => navSlide())
+menuBtn.addEventListener('click', () => navSlide());
 
-menuBtn.addEventListener('click', () => {mainnav.classList.toggle('slide')}, false);
 
+
+function navSlide() {
+    mainnav.classList.toggle('slide')
+}
 
 
 // When the user scrolls the page, execute myFunction
@@ -36,4 +52,11 @@ function myFunction() {
     header.classList.remove("sticky");
     body.classList.remove("top-padding")
   }
-}
+};
+
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav a').forEach(a => {
+    if(a.href.includes(`${activePage}`)){
+        a.classList.add('active');
+    };
+});

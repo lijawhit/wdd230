@@ -9,7 +9,7 @@
   const captionDesc = document.querySelector('figcaption');
   
   //API URL with arguments  
-  const APIurl = 'https://api.openweathermap.org/data/2.5/weather?q=Williamsburg&appid=4d8f272cf2208705e4404f7c9e164e21&units=imperial';
+  const APIurl = 'https://api.openweathermap.org/data/2.5/weather?q=williamsburg&appid=4d8f272cf2208705e4404f7c9e164e21&units=imperial';
 
 fetch(APIurl)
     .then((response) => response.json())
