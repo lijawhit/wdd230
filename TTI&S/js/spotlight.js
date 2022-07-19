@@ -12,6 +12,7 @@ fetch(requestURL)
 
 
 function choosespotlight(temples){
+
   const firstDay = new Date();
   const secondDay = new Date(firstDay)
   const thirdDay = new Date(firstDay)
@@ -21,15 +22,63 @@ function choosespotlight(temples){
   const tomorrow = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(secondDay);  
   const dayAfterTomorrow = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(thirdDay);
 
-  const jsonTemple = Math.floor(Math.random() * 4);
-  // const jsonTemple = 2
+  // let templesCount = Object.keys(temples).length;
+  let templesCount = 4
 
+  let jsonTemple = getId(firstDay, templesCount)
+  
   displayspotlight(temples[jsonTemple])
   displayweather(temples[jsonTemple], today, "box1", 0)
   displayweather(temples[jsonTemple], tomorrow, "box2", 1)
   displayweather(temples[jsonTemple], dayAfterTomorrow, "box3", 2)
 
 }
+
+function getId(firstDay, templesCount) {
+  
+  let time = firstDay.getMinutes()
+  console.log(`Current Minute: ${time}`)
+
+  var allLists = []
+
+  let listLength = 60 / templesCount
+
+  let totalLists = templesCount
+ 
+  let og = -1
+  
+  for (let value = 0; value < totalLists; value++) {
+    test = og + 1
+    i = [test]
+    for (let value = 0; value < listLength; value++) {
+      number = test + templesCount
+      i.push(number)
+      test = number
+    }
+    og++
+    allLists.push(i)
+  } 
+
+  console.log(allLists)
+
+  let jsonTemple
+  let x = -1
+
+  for (let value = 0; value < totalLists; value++) {
+    listId = x + 1
+    minutes = allLists[listId]
+    console.log(`List ID: ${listId}\nMinutes in List: ${minutes}`)
+    if ((`${minutes}`).includes(`${time}`)) {
+      jsonTemple = listId
+      console.log(`UPLOADED SPOTLIGHT TEMPLE FROM LIST: ${jsonTemple}`)
+    };
+    x++
+
+  }
+
+  return jsonTemple;
+};
+
 
 function displayspotlight(temple) {
   // let card = document.querySelector('.spotlight')
