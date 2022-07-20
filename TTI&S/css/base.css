@@ -43,18 +43,44 @@ body a, p {
 
 /* HEADER */
 
+/* .alert {
+    display: grid;
+        position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    background: var(--color3);
+    z-index: 100;
+    padding: 1rem;
+    color: var(--color6);
+}
+
+.alertBlur {    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000000;
+    filter: opacity(50%);
+    z-index: 200;
+} */
+
+
 header {
+    grid-column: 1;
+    grid-row: 2;
     display: grid;
     grid-template-columns: 50px 1fr 2fr;
     grid-template-rows: 60px;
     align-items: center;
-    z-index: 100;
+    z-index: 10;
     background: var(--color9);
 }
 
-.content {
-    padding: 16px;
-}
 
 .sticky {
     position: fixed;
@@ -168,7 +194,7 @@ nav a {
 
 /* NAVIGATION ANIMATION */
 
-.slide {
+.slideHorizontal {
     transform: translateX(280px);
     transition: all .4s ease-in-out;
 }
@@ -190,9 +216,18 @@ nav a {
     z-index: 10;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 
 main {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* CONTENT */
+
+.content {
+    grid-column: 1;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -260,11 +295,6 @@ main {
 .spotlight-temple {
     grid-column: 1;
     grid-row: 2;
-}
-
-.spotlight {
-    grid-column: 1;
-    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr;
@@ -274,15 +304,15 @@ main {
     gap: 1rem;
 }
 
-.spotlight h2 {
+.spotlight-temple h2 {
     grid-column: 1/3;
 }
 
-.spotlight em {
+.spotlight-temple em {
     font-size: 1rem;
 }
 
-.spotlight img{
+.spotlight-temple img{
     width: 100%;
     grid-column: 1;
     grid-row: 2;
@@ -291,7 +321,7 @@ main {
     align-self: center;
 }
 
-.spotlight p {
+.spotlight-temple p {
     grid-column: 2;
     grid-row: 2;
 }
@@ -300,6 +330,7 @@ main {
 
 .hr1 {
     grid-row: 3;
+    grid-column: 1;
     width: 80%;
     place-self: center;
     color: var(--color9);
@@ -401,6 +432,8 @@ main {
 /* FOOTER */
 
 footer {
+    grid-column: 1;
+    grid-row: 4;
     background: var(--color8);
     padding: 10px;
     text-align: center;

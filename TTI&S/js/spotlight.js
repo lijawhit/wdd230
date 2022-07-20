@@ -16,21 +16,23 @@ function choosespotlight(temples){
   const firstDay = new Date();
   const secondDay = new Date(firstDay)
   const thirdDay = new Date(firstDay)
+  const fourthDay = new Date(firstDay)
   secondDay.setDate(secondDay.getDate() + 1)
   thirdDay.setDate(thirdDay.getDate() + 2)
-  const today = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(firstDay);
-  const tomorrow = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(secondDay);  
-  const dayAfterTomorrow = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(thirdDay);
+  const day1 = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(firstDay);
+  const day2 = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(secondDay);  
+  const day3 = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(thirdDay);
 
-  // let templesCount = Object.keys(temples).length;
-  let templesCount = 4
-
+  let templesCount = Object.keys(temples).length;
+  
   let jsonTemple = getId(firstDay, templesCount)
+  // let jsonTemple = 4
   
   displayspotlight(temples[jsonTemple])
-  displayweather(temples[jsonTemple], today, "box1", 0)
-  displayweather(temples[jsonTemple], tomorrow, "box2", 1)
-  displayweather(temples[jsonTemple], dayAfterTomorrow, "box3", 2)
+  displayweather(temples[jsonTemple], day1, "box1", 0)
+  displayweather(temples[jsonTemple], day2, "box2", 1)
+  displayweather(temples[jsonTemple], day3, "box3", 2)
+  alert(temples[jsonTemple], day1, 0)
 
 }
 
@@ -42,12 +44,10 @@ function getId(firstDay, templesCount) {
   var allLists = []
 
   let listLength = 60 / templesCount
-
-  let totalLists = templesCount
  
   let og = -1
   
-  for (let value = 0; value < totalLists; value++) {
+  for (let value = 0; value < templesCount; value++) {
     test = og + 1
     i = [test]
     for (let value = 0; value < listLength; value++) {
@@ -64,7 +64,7 @@ function getId(firstDay, templesCount) {
   let jsonTemple
   let x = -1
 
-  for (let value = 0; value < totalLists; value++) {
+  for (let value = 0; value < templesCount; value++) {
     listId = x + 1
     minutes = allLists[listId]
     console.log(`List ID: ${listId}\nMinutes in List: ${minutes}`)
@@ -81,30 +81,22 @@ function getId(firstDay, templesCount) {
 
 
 function displayspotlight(temple) {
-  // let card = document.querySelector('.spotlight')
-  let card = document.createElement('div')
   let h2 = document.createElement('h2');
   let img = document.createElement('img');
   let p = document.createElement('p');
 
-  card.setAttribute('class', 'spotlight')
-
-  h2.innerHTML = `Temple Spotlight<br><em>${temple.city}, ${temple.country}</em>`
+  h2.innerHTML = `Temple Highlight<br><em>${temple.city}, ${temple.country}</em>`
 
   img.setAttribute('src', temple.image);
   img.setAttribute('alt', `Icon image for ${temple.name}`);
   img.setAttribute('loading', 'lazy');
 
-  // h4.innerHTML = `${temple.city}<br><em>${temple.country}</em>`
-
   p.textContent = temple.about;
 
-  card.appendChild(h2);
-  card.appendChild(img);
-  card.appendChild(p);
-
-  document.querySelector('.spotlight-temple').appendChild(card);
-
+  document.querySelector('.spotlight-temple').appendChild(h2);
+  
+  document.querySelector('.spotlight-temple').appendChild(img);
+  document.querySelector('.spotlight-temple').appendChild(p);
   
   let weatherH2 = document.createElement('h2')
   
@@ -159,5 +151,27 @@ function displayweather(temple, day, box, forecastday) {
     document.querySelector('.spotlight-weather').appendChild(card);
 
   });
+};
 
-}
+function alert(temple, day, forecastday) {
+
+  const APIurl = `https://api.weatherapi.com/v1/forecast.json?key=087fe58ffb314648b00140139221907&q=${temple.weatherId}&days=3&aqi=no&alerts=yes`;
+  
+  fetch(APIurl, temple)
+  .then((response) => response.json())
+  .then((weatherinfo) => {
+    
+    let alertsCount = Object.keys(weatherinfo.alerts.alert).length;
+
+    console.log(`Alerts Count: ${alertsCount}`)
+    
+
+
+
+    let msgType = weatherinfo.alerts.alert.msgtype
+
+    if (msgType === "Alert") {
+    console.log()
+    };
+  });
+};

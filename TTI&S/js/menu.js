@@ -29,7 +29,7 @@ menuBtn.addEventListener('click', () => navSlide());
 
 
 function navSlide() {
-    mainnav.classList.toggle('slide')
+    mainnav.classList.toggle('slideHorizontal')
 }
 
 
@@ -47,10 +47,10 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    body.classList.add("top-padding")
+    body.classList.add("top-padding");
   } else {
     header.classList.remove("sticky");
-    body.classList.remove("top-padding")
+    body.classList.remove("top-padding");
   }
 };
 
