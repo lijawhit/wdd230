@@ -26,56 +26,71 @@ function choosespotlight(temples){
   let templesCount = Object.keys(temples).length;
   
   let jsonTemple = getId(firstDay, templesCount)
-  // let jsonTemple = 4
+  // let jsonTemple = 3
   
-  displayspotlight(temples[jsonTemple])
-  displayweather(temples[jsonTemple], day1, "box1", 0)
-  displayweather(temples[jsonTemple], day2, "box2", 1)
-  displayweather(temples[jsonTemple], day3, "box3", 2)
-  alert(temples[jsonTemple], day1, 0)
+  displayspotlight(temples[jsonTemple]);
+  displayweather(temples[jsonTemple], day1, "box1", 0);
+  displayweather(temples[jsonTemple], day2, "box2", 1);
+  displayweather(temples[jsonTemple], day3, "box3", 2);
 
 }
 
 function getId(firstDay, templesCount) {
   
   let time = firstDay.getMinutes()
+
   console.log(`Current Minute: ${time}`)
+  console.log(`Current Temple Count: ${templesCount}`)
 
   var allLists = []
 
   let listLength = 60 / templesCount
- 
+
+  
+  console.log(`List Length: ${listLength}`)
+
   let og = -1
   
   for (let value = 0; value < templesCount; value++) {
-    test = og + 1
-    i = [test]
+    base = og + 1
+    templeMinutesList = [base]
     for (let value = 0; value < listLength; value++) {
-      number = test + templesCount
-      i.push(number)
-      test = number
+      minute = base + templesCount
+      templeMinutesList.push(minute)
+      base = minute
     }
     og++
-    allLists.push(i)
+    allLists.push(templeMinutesList)
   } 
+  
 
   console.log(allLists)
 
   let jsonTemple
-  let x = -1
 
   for (let value = 0; value < templesCount; value++) {
-    listId = x + 1
-    minutes = allLists[listId]
+        
+    minutes = allLists[value];
+
+    listId = value
+
+    minutesLength = minutes.length;
+    
     console.log(`List ID: ${listId}\nMinutes in List: ${minutes}`)
-    if ((`${minutes}`).includes(`${time}`)) {
-      jsonTemple = listId
-      console.log(`UPLOADED SPOTLIGHT TEMPLE FROM LIST: ${jsonTemple}`)
+
+    for (let value = 0; value < minutes.length; value++) {
+
+      minute = minutes[value]
+
+      console.log(minute)
+      if ((`${minute}`) == (`${time}`)) {
+        jsonTemple = listId
+        console.log(`UPLOADED SPOTLIGHT TEMPLE FROM LIST: ${jsonTemple}`)
+      };
     };
-    x++
+  };
 
-  }
-
+  console.log(`JsonTemple Number: ${jsonTemple}`)
   return jsonTemple;
 };
 
@@ -153,25 +168,25 @@ function displayweather(temple, day, box, forecastday) {
   });
 };
 
-function alert(temple, day, forecastday) {
+// function alert(temple, day, forecastday) {
 
-  const APIurl = `https://api.weatherapi.com/v1/forecast.json?key=087fe58ffb314648b00140139221907&q=${temple.weatherId}&days=3&aqi=no&alerts=yes`;
+//   const APIurl = `https://api.weatherapi.com/v1/forecast.json?key=087fe58ffb314648b00140139221907&q=${temple.weatherId}&days=3&aqi=no&alerts=yes`;
   
-  fetch(APIurl, temple)
-  .then((response) => response.json())
-  .then((weatherinfo) => {
+//   fetch(APIurl, temple)
+//   .then((response) => response.json())
+//   .then((weatherinfo) => {
     
-    let alertsCount = Object.keys(weatherinfo.alerts.alert).length;
+//     let alertsCount = Object.keys(weatherinfo.alerts.alert).length;
 
-    console.log(`Alerts Count: ${alertsCount}`)
+//     console.log(`Alerts Count: ${alertsCount}`)
     
 
 
 
-    let msgType = weatherinfo.alerts.alert.msgtype
+//     let msgType = weatherinfo.alerts.alert.msgtype
 
-    if (msgType === "Alert") {
-    console.log()
-    };
-  });
-};
+//     if (msgType === "Alert") {
+//     console.log()
+//     };
+//   });
+// };
