@@ -448,3 +448,145 @@ footer img {
     width: 1rem;
     margin: 10px 5px 0 5px;
 }
+
+
+/* TEMPLE */
+
+
+.cards {
+    margin: 1em;
+}
+.cards section p {
+    font-size: small;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+.cards section ul {
+    padding: 0 1em;
+    list-style-type:none;
+}
+
+.cards section div:nth-child(9) ul {
+font-size: small;
+}
+
+.cards section ul li {
+    padding: 0.3em;
+}
+
+.cards section dl {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: small;
+}
+
+.cards section dl  dt:nth-child(1),
+.cards section dd:nth-child(2) {
+    grid-column: 1/2;
+}
+
+.cards section dl  dt:nth-child(5),
+.cards section dd:nth-child(6) {
+    grid-column: 1/3;
+}
+
+/* groundbreaking */
+.cards section dl  dt:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.cards section dl  dd:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/* dedicated */
+.cards section dl  dt:nth-child(7),
+.cards section dl  dd:nth-child(8) {
+    grid-column: 1/3;
+    padding: 0.25em 2em;
+}
+
+/* ordinance schedule */
+.cards section p:nth-child(7) {
+    padding: .5rem;
+    margin-bottom: 1em;
+}
+
+/* session schedule */
+.cards section p:nth-child(8) {
+    padding: .5rem;
+    margin-bottom: 3em;
+}
+
+
+.cards section dt {
+    font-weight: bold;
+}
+
+.cards section dd {
+    padding: 0.5em;
+    margin: 0 0 1em 0;
+}
+
+.cards section {
+    text-align: center;
+    background-image: linear-gradient( var(--color7) ,  var(--color9) 20%, var(--color8));
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    color: var(--color4);
+}
+
+.cards section img {
+    width: 100%;
+    border-radius: 0.4em;
+    box-shadow: 1px 2px 10px black;
+}
+  
+.cards section h3 {
+    font-size: 1.2rem;
+    color: var(--color5);
+    margin-bottom: .5rem;
+}
+
+.cards section h2 {
+    font-size: 2.2em;
+    color: var(--color2);
+    padding: 0.5em 0;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0), var(  --color3), rgba(0,0,0,0) )
+}
+
+.cards section b {
+    color: var(--color5);
+}
+
+.cards div {
+    border-radius: 0.4em;
+    margin: 1em 1em;
+    padding: 0.5em 0em 1em;
+}
+
+.cards button {
+    display: block;
+    font-size: 1rem;
+    margin: 0.4em auto;
+    padding: 2%;
+    width: 50%;
+    color: var(--color4);
+    border: none;
+    cursor: pointer;
+    background: var(--color1);
+    border-radius: 1em;
+}
+
+.cards button:hover {
+background-color: #58c0fc;
+}
+

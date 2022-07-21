@@ -37,9 +37,13 @@ function choosespotlight(temples){
 
 function getId(firstDay, templesCount) {
   
-  let time = firstDay.getMinutes()
+  let min = firstDay.getMinutes()
+  let sec = firstDay.getSeconds()
 
-  console.log(`Current Minute: ${time}`)
+  let time = min
+
+  console.log(`Current Minute: ${min}`)
+  console.log(`Current Second: ${sec}`)
   console.log(`Current Temple Count: ${templesCount}`)
 
   var allLists = []
