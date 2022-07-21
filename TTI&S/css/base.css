@@ -226,7 +226,7 @@ main {
 
 main h1 {
     text-align: center;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 /* CONTENT */
@@ -673,7 +673,7 @@ form label input:required:valid{
 
 .form-container
 {
-    margin: 3em 1em;
+    margin: 0 1em 1em 1em;
 }
 
 form label select
@@ -717,11 +717,10 @@ form label select
 }
 
 .outside-div {
-    text-align: center;
+    place-self: center;
     grid-row: 2;
-    align-self: end;
+    grid-row: 3;
     grid-column: 1;
-    margin: 1rem;
 }
 
 form label textarea
