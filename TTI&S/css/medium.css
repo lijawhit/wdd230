@@ -22,10 +22,6 @@
         grid-template-rows: 70px;
     }
 
-    header img{
-        height: 80%;
-    }
-
     nav {
         top: 70px;
         left: -280px;
@@ -94,6 +90,7 @@
     .cards {
         width: 80%;
         justify-self: center;
+        grid-row: 2;
     }
         
     .cards section

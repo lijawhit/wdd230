@@ -30,7 +30,72 @@
       </nav>
     </header> 
     <main>
+            
+      <h1>Reservations</h1>
+      <div class="form-page">
+       
+        <div class="form-container">
+
+        <form action="thankyou.html" method="get">
+          <h2>Book Now!</h2>
+          <p>Please fill in this form to create a reservation.</p>
+          <hr />
+
+
+
+          <label for="fname">
+            Full name*
+            <input type="text" id="fname" name="fname" required />
+          </label>
+
+          <label for="email">
+            Email*
+            <input
+              id="email"
+              type="email"
+              placeholder="youremail@website.com"
+              name="email"
+              required
+            />
+          </label>
+          <label for="phone">
+            Phone Number*
+            <input id="phone" type="tel" name="phone" required />
+          </label>
+
+          <label for="location">
+            Location
+            <select name="location" id="location" required>
+              <option value="oak">Tokyo, Japan Temple</option>
+              <option value="ariz">San Jose, Costa Rica Temple</option>
+              <option value="wash">San Diego, California Temple</option>
+              <option value="idaho">Rome, Italy Temple</option>
+            </select>
+          </label>
       
+        <label for="description">
+          Special accommodations Request:
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </label>
+
+
+          <input type="hidden" id="DateTime" name="DateTime" value="" />
+
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </form>
+        </div>
+      </div>
+      
+      <p class="outside-div">To cancel a reservation please contact us</p>
+      <br><br>
+
+
+
       <div class="contacts">
         <h4>CONTACTS</h4>
         <a href="https://www.google.com/maps/place/4867+Montgomery+Ln+%23300,+Bethesda,+MD+20814/data=!4m2!3m1!1s0x89b7c97c93d073e1:0x4d5621c2b72bffd0?sa=X&ved=2ahUKEwiq_qio2_34AhW9kIkEHfnGAvEQ8gF6BAgNEAE">
