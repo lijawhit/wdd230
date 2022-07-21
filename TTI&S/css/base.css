@@ -36,6 +36,7 @@ h2 {
 body {
     display: grid;
     background: var(--color4);
+    
 }
 
 body a, p {
