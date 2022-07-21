@@ -35,8 +35,7 @@ h2 {
 
 body {
     display: grid;
-    background: #FFF;
-
+    background-color: #FFF;
 }
 
 body a, p {
