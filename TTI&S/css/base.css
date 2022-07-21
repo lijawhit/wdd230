@@ -454,6 +454,10 @@ footer img {
     margin: 10px 5px 0 5px;
 }
 
+footer a {
+    color: var(--color5);   
+}
+
 
 /* TEMPLE */
 
