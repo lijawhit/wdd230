@@ -677,6 +677,27 @@ form label select
     border-radius: 4px;
     font-size: 1rem;
 }
+
+.signupbtn {
+    z-index: 1;
+    padding: 8px 16px 8px 16px;
+    align-self: start;
+    background: var(--color4);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font3);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color5);
+}
+
+
+.signupbtn:hover {
+    background: var(--color5);
+    color: var(--color9);
+    cursor: pointer;
+}
+
 #location
 {
     margin-left:2.1em;
