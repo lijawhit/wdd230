@@ -1,6 +1,6 @@
 {"temples": [
       {
-        "name": "Tokyo Japan Temple",
+        "name": "Tokyo, Japan Temple",
         "image": "images/temples/tokyo.jpg",
         "city": "Tokyo",
         "country": "Japan",
@@ -30,7 +30,7 @@
         "country": "Costa Rica",
         "address": "Metros Oeste de 600, Heredia Province,<br>Belén, 40702, Costa Rica",
         "phone": "(506) 2293-6681",
-        "email": "",
+        "email": "sanjosecr@temples.org",
         "services" : ["No clothing rental available",
         "No cafeteria available",
         "No patron housing available",
@@ -51,13 +51,13 @@
         "weatherId": "Heredia Costa Rica"
       },
       {
-        "name": "San Diego ",
+        "name": "San Diego, California Temple ",
         "image": "images/temples/san-diego.jpg",
         "city": "San Diego, California",
         "country": "United States",
         "address": "7474 Charmant Dr,<br>San Diego CA 92122-5000, United States",
         "phone": "(1) 858-622-0991",
-        "email": "",
+        "email": "sandiego@temples.org",
         "services" : ["Clothing rental available",
         "No cafeteria available",
         "No patron housing available",
@@ -78,7 +78,7 @@
         "weatherId": "San Diego"
       },
       {
-        "name": "Rome Italy Temple",
+        "name": "Rome, Italy Temple",
         "image": "images/temples/rome.jpg",
         "city": "Rome",
         "country": "Italy",

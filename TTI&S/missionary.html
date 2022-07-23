@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/x-icon" href="images/t.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="discription" content="Williamsburg Commerce Project: Chamber Home Page Build">
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+      <title>TTI&S | Missionary</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="header-logo" src="images/logo.webp" alt="TTI&S Logo">
+      <div class="date"></div>
+      <div class="blurDiv"></div>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+      </nav>
+    </header> 
+    <main>
+        <div class="servicesDiv">
+            <h1>Full-time Temple Missionary</h1>
+
+
+            <div class="missionary-stack">
+                <div>
+                <img
+                    src="images/missionaries.jpg"
+                    alt="shuttle bus taking people to the temple"
+                />
+                </div>
+                <h2>Long Term Stay Accommodations</h2>
+                <p>
+                Our Kitchenette Suites provide quick access to an exercise room,
+                changing rooms and Temple Shuttles, making these suites one of the
+                best options for Full-time Temple Missionaries.
+                </p>
+                <div>
+                <img src="images/fitness_5.jpg" alt="fitness center" />
+                </div>
+            </div>
+
+            <div class="services service-right">
+                <div class="services-smaller">
+                <h2 class="text-center">Room to Breathe.</h2>
+
+                <p class="services-darker">
+                    The following conveniences are provided in Kitchenette Suites
+                </p>
+                <ul>
+                    <li>Full kitchen</li>
+                    <li>Small living room</li>
+                    <li>Outdoor sitting area</li>
+                    <li>Large common room for visiting with neighbors.</li>
+                </ul>
+                </div>
+                <div>
+                <img
+                    id="receptionhall"
+                    src="images/kitchenette.jpg"
+                    alt="kitchen area of kitchenette room"
+                />
+                </div>
+            </div>
+
+            <div class="services text-center">
+                <h2 class="text-center">Made for You.</h2>
+
+                <div class="convenience-pane">
+                <div>
+                    <figure>
+                    <img
+                        src="images/templeshuttle.jpg"
+                        alt="shuttle taking people to temple"
+                    />
+                    <figcaption>Temple Shuttle</figcaption>
+                    </figure>
+                </div>
+
+                <div class="services-darker">
+                    Full-time Missionaries also get unlimited access to the Family
+                    History Center and Temple Shuttle.
+                </div>
+                </div>
+            </div>
+
+            <div class="form-page form-missionary" id="contact-form">
+                <form action="messagesent.html" method="get">
+                <h2 id="contact-form-title">Contact Us</h2>
+                <p>
+                    Please fill in this form to submit a question or contact us for more
+                    details.
+                </p>
+                <hr />
+
+                <label for="fname">
+                    Name*
+                    <input type="text" id="fname" name="fname" required />
+                </label>
+
+                <label for="email">
+                    Email*
+                    <input
+                    id="email"
+                    type="email"
+                    placeholder="youremail@website.com"
+                    name="email"
+                    required
+                    />
+                </label>
+
+                <label for="description">
+                    Question
+                    <textarea
+                    id="description"
+                    name="description"
+                    rows="4"
+                    cols="50"
+                    ></textarea>
+                </label>
+
+                <input type="hidden" id="DateTime" name="DateTime" value="" />
+
+                <button type="submit" class="signupbtn">Submit</button>
+                </form>
+            </div>
+
+            <div class="text-center">
+                <a href="services.html"> <small> Back to Services Page. </small></a>
+            </div>
+            <br />
+        </div>
+      <div class="contacts">
+        <h4>CONTACTS</h4>
+        <a href="https://www.google.com/maps/place/4867+Montgomery+Ln+%23300,+Bethesda,+MD+20814/data=!4m2!3m1!1s0x89b7c97c93d073e1:0x4d5621c2b72bffd0?sa=X&ved=2ahUKEwiq_qio2_34AhW9kIkEHfnGAvEQ8gF6BAgNEAE">
+          <img src="images/location.png">4867 Montgomery Ln #300, Bethesda, MD 20814 </a>
+        <p><img src="images/phone.png">Contact us directly at +1 (123) 456-7890</p>
+        <p><img src="images/mail.png">info@ttiands.com </p>
+      </div>
+    </main>
+        
+    <footer>
+
+      <p>&copy;<span id="year"></span> The Temple Inns & Suites. All Rights Reserved | Elijah P. Whitchurch | WDD230 | Last Modification:  <span id="lastupdate"></span></p>
+      
+      <p>Thank you to <a href="https://www.weatherapi.com/">weatherapi.com</a> for the weather updates</p>
+
+      <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook social media link"></a>
+      <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube social media link"></a>
+
+      <script src="js/menu.js"></script>
+    </footer>
+  </body>
+</html>

@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/medium.css">
       <link rel="stylesheet" href="css/large.css">
-      <title>TTI&S | Reservation</title>
+      <title>TTI&S</title>
   </head>
 
   <body>
@@ -29,78 +29,12 @@
       </nav>
     </header> 
     <main>
-            
-      <h1>Reservations</h1>
-      <div class="form-page">
-       
-        <div class="form-container">
-
-        <form action="thankyou.html" method="get">
-          <h2>Book Now!</h2>
-          <p>Please fill in this form to create a reservation.</p>
-          <hr />
-
-
-
-          <label for="fname">
-            Full name*
-            <input type="text" id="fname" name="fname" required />
-          </label>
-
-          <label for="email">
-            Email*
-            <input
-              id="email"
-              type="email"
-              placeholder="youremail@website.com"
-              name="email"
-              required
-            />
-          </label>
-          <label for="phone">
-            Phone Number*
-            <input id="phone" type="tel" name="phone" required />
-          </label>
-
-          <label for="location">
-            Location
-            <select name="location" id="location" required>
-              <option value="oak">Tokyo, Japan Temple</option>
-              <option value="ariz">San Jose, Costa Rica Temple</option>
-              <option value="wash">San Diego, California Temple</option>
-              <option value="idaho">Rome, Italy Temple</option>
-            </select>
-          </label>
-      
-          <label for="homestate">
-            Home Country
-          <input type="text" list="homestate" />
-          </label>
-
- 
-
-        <label for="description">
-          Special Accommodations Request:
-          <textarea
-            id="description"
-            name="description"
-            rows="4"
-            cols="50"
-          ></textarea>
-        </label>
-
-
-          <input type="hidden" id="DateTime" name="DateTime" value="" />
-
-          <button type="submit" class="signupbtn">BOOK NOW</button>
-        </form>
-        </div>
-      </div>
-      
-      <p class="outside-div">To cancel a reservation please contact us</p>
-      <br><br>
-
-
+        <div class="thankyou">
+            <h1>Message Sent!</h1>
+            <p>Please check your email in the next two to three business days for a response. </p>
+              <p>We look forward to serving you.</p>
+            <p>Click <a href="index.html">here</a> to go back to the home page.</p>
+          </div>
 
       <div class="contacts">
         <h4>CONTACTS</h4>
@@ -121,6 +55,7 @@
       <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube social media link"></a>
 
       <script src="js/menu.js"></script>
+      <script src="js/temples.js"></script>
     </footer>
   </body>
 </html>

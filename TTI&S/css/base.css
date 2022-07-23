@@ -223,11 +223,14 @@ main {
     grid-row: 3;
     display: grid;
     grid-template-columns: 1fr;
+    background: var(--color4);
+    height: var(--height);
 }
 
 main h1 {
     text-align: center;
     margin: 1rem;
+    font-family: var(--font2);
 }
 
 /* CONTENT */
@@ -467,7 +470,6 @@ footer a {
     margin: 1em;
 }
 .cards section p {
-    font-size: small;
     margin: 0 0 1em 0;
     padding: 0;
 }
@@ -475,11 +477,6 @@ footer a {
     padding: 0 1em;
     list-style-type:none;
 }
-
-.cards section div:nth-child(9) ul {
-font-size: small;
-}
-
 .cards section ul li {
     padding: 0.3em;
 }
@@ -487,7 +484,6 @@ font-size: small;
 .cards section dl {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: small;
 }
 
 .cards section dl  dt:nth-child(1),
@@ -613,6 +609,7 @@ background-color: #58c0fc;
 .form-page {
     grid-row: 2;
     grid-column: 1;
+    margin: 1rem;
 }
 
 .form-page form p {
@@ -640,7 +637,6 @@ background-color: #58c0fc;
     padding: 1em;
     background: linear-gradient( var(--color7) ,  var(--color9) 20%, var(--color8));
     border-radius: 1em;
-    font-size: small;
     max-width: 25rem;
     margin: 0 auto 0;
 }
@@ -683,6 +679,15 @@ form label select
     font-size: 1rem;
 }
 
+.form-missionary form button {
+    margin-top: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0.5em;
+
+}
+
 .signupbtn {
     z-index: 1;
     padding: 8px 16px 8px 16px;
@@ -715,6 +720,8 @@ form label select
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    border-radius: 0.5em;
+
 }
 
 .outside-div {
@@ -729,4 +736,282 @@ form label textarea
     width: 100%;
     margin-top: 0.5em;
     border-radius: 4px;
+}
+
+
+/* SERVICES */
+
+.services {
+    background-color: var(--color9);
+    color: var(--color4);
+    padding: 1em;
+    margin: 1em 1em;
+    border-radius: 0.5em;
+}
+
+.services button {
+    padding: 0.5em 1em;
+    border: 1px solid var(--color5);
+    background: none;
+    color: var(--color4);
+    font-weight: lighter;
+    cursor: pointer;
+    margin: 2em 0;
+    border-radius: 0.5em;
+    
+
+}
+
+.services button:hover {
+    border: 1px solid var(--color2);
+}
+
+.services-darker {
+    color: var(--color5);
+}
+
+.services li {
+    padding: 0.3em;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services div {
+    padding: 1em;
+}
+
+.services .services-small {
+   padding: 1em 1em;
+}
+
+.services h2 {
+    color: var(--color2);
+}
+
+.service-right div:nth-child(1) {
+    background-image: url("../images/templeback.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 50%;
+}
+
+.service-right button:nth-child(2) {
+    justify-self: flex-end;
+}
+
+
+.button-right {
+    text-align: center;
+}
+
+
+.reception-food-stack {
+    color: var(--color4);
+    text-align: center;
+    background-color: var(--color9);
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+.reception-food-stack div {
+    padding: 2em 3em 2em;
+}
+
+.reception-food-stack img {
+    width: 100%;
+    box-shadow: 5px 5px 10px var(--color4);
+    border-radius: 0.5em;
+
+}
+
+.reception-food-stack h2 {
+    color: var(--color5);
+    padding: 0 1em;
+}
+
+.reception-food-stack p {
+    background-color: var(--color3);
+    padding: 1em 2em;
+}
+
+.services .services-smaller {
+   padding: 1em 1em;
+}
+
+#receptionhall {
+    box-shadow: 5px 5px 10px var(--color4);
+    border-radius: 0.5em;
+}
+
+
+.missionary-stack {
+    color: var(--color4);
+    text-align: center;
+    background-color: var(--color9);
+    margin: 1em;   
+    border-radius: 0.5em;
+}
+
+.missionary-stack div {
+    padding: 2em 3em 2em;
+}
+
+.missionary-stack img {
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 5px 5px 10px var(--color4);
+    border-radius: 0.5em;
+}
+
+.missionary-stack h2 {
+    color:var(--color2);
+    padding: 0 1rem 1rem 1rem;
+}
+
+.missionary-stack p {
+    background-color: var(--color3);
+    padding: 1em 2em;
+}
+
+.convenience-pane p {
+    padding: 0 3em;
+}
+
+.convenience-pane img {
+    max-width: 400px;
+    border: 10px solid var(--color3);
+    border-radius: 0.5em;
+}
+
+.convenience-pane figure {
+    margin: 0;
+}
+
+.convenience-pane figcaption {
+    margin: 0.5em 3em;
+    color: rgb(199, 198, 198);
+}
+
+#contact-form-title {
+    color: var(--color4);
+    font-weight: lighter;
+}
+
+.terms-box {
+    margin: 0.5em;
+    color:rgb(85, 168, 223);
+}
+
+.terms-box a {
+    color: var(--color4);
+}
+
+.terms-box a:hover {
+    color: rgb(0, 153, 255);
+}
+
+.weather-warning-banner button {
+    margin: 0 2em;
+    float: right;
+    cursor: pointer;
+}
+
+.weather-warning-banner button:hover { 
+    background-color: #0075b9;
+}
+
+.services-darker a {
+    text-decoration: none;
+    color: var(--color4);
+}
+.services-darker a:hover {
+    color:rgb(185, 247, 255)
+}
+
+.radio-roomtype {
+    display: block;
+    text-align: center;
+    margin: 0.4em 0;
+}
+
+.radio-roomtype input, .radio-roomtype label {
+    margin: 0;
+    padding: 0;
+    display: inline-block
+}
+
+.reception-food-stack .catering-menu {
+    text-align: center;
+    color: black;
+    margin: 0em 1em 3em;
+    padding: 0em 2em 2em 2em;
+}
+
+.reception-food-stack .catering-menu div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#cateringtitle {
+    margin: 0 3em;
+}
+
+.catering-menu h3 {
+    color: var(--color5);
+    margin-top: 1rem;
+}
+
+.catering-menu ul {
+    padding: 0;
+    margin: 2em 0;
+    color: var(--color4);
+}
+
+.catering-menu ul li {
+    list-style: none;
+    color: var(--color4);
+}
+
+fieldset {
+    border: none;
+}
+
+.servicesDiv {
+    grid-column: 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.thankyou {
+    background-color: var(--color9);
+    width: 80%;
+    margin: 25% 1rem;
+    justify-self: center;
+    border-radius: 0.5em;
+}
+
+.thankyou h1 {
+    color: var(--color2);
+}
+
+.thankyou p {
+    text-align: center;
+    color: var(--color4);
+}
+
+.thankyou p:nth-child(3){
+    margin-bottom: 2rem;
+}
+
+.thankyou p:nth-child(4){
+    margin-bottom: 2rem;
+}
+
+.thankyou a {
+    color: var(--color5);
 }
