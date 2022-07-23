@@ -912,14 +912,24 @@ form label textarea
     color: rgb(0, 153, 255);
 }
 
+.weather-warning-banner {
+    background-color: white;
+    display: none;
+    padding: .1rem 1rem .1rem 1rem;
+}
+
 .weather-warning-banner button {
-    margin: 0 2em;
-    float: right;
     cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.weather-warning-banner p {
+    font-size: .8rem;
 }
 
 .weather-warning-banner button:hover { 
-    background-color: #0075b9;
+    background-color: var(--color5);
 }
 
 .services-darker a {

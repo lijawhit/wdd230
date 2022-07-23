@@ -78,6 +78,33 @@
         "weatherId": "San Diego"
       },
       {
+        "name": "Test ",
+        "image": "images/temples/san-diego.jpg",
+        "city": "Test",
+        "country": "",
+        "address": "7474 Charmant Dr,<br>San Diego CA 92122-5000, United States",
+        "phone": "(1) 858-622-0991",
+        "email": "sandiego@temples.org",
+        "services" : ["Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"],
+        "history": {
+          "Announced": "7 April 1984",
+          "Groundbreaking": "27 February 1988",
+          "Dedicated": "25 April 1993"
+         },
+         "ordinance": "Appointments for proxy ordinances are encouraged. Patrons without appointments are also welcome, but may be asked to wait for an opportunity to participate.",
+         "session": "9:30 AM, 11:30 AM, 4:30 PM, 6:30 PM",
+        "closures": [
+          "Saturday, 1 October 2022",
+          "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022"],
+        "about": "This Temple is the 47th constructed and 45th operating temple. Located near the La Jolla community, it was built with two main spires, but unique to this temple are four smaller spires at the base of each main spire",
+        "weatherId": "miami"
+      },
+      {
         "name": "Rome, Italy Temple",
         "image": "images/temples/rome.jpg",
         "city": "Rome",

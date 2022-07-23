@@ -24,8 +24,8 @@ function choosespotlight(temples){
   const day3 = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(thirdDay);
 
   let templesCount = Object.keys(temples).length;
-  
   let jsonTemple = getId(firstDay, templesCount)
+
   // let jsonTemple = 3
   
   displayspotlight(temples[jsonTemple]);
@@ -33,7 +33,35 @@ function choosespotlight(temples){
   displayweather(temples[jsonTemple], day2, "box2", 1);
   displayweather(temples[jsonTemple], day3, "box3", 2);
 
+  badWeather(temples[jsonTemple])
+
 }
+
+function badWeather(temple) {
+  const APIAlerturl = `https://api.weatherapi.com/v1/forecast.json?key=087fe58ffb314648b00140139221907&q=${temple.weatherId}&days=3&aqi=no&alerts=yes`;
+  const badweatherbanner = document.querySelector(".weather-warning-banner");
+  
+  fetch(APIAlerturl)
+  .then((response) => response.json())
+  .then((weatherinfo) => {
+    // IF THERE IS BAD WEATHER
+    if(weatherinfo.alerts.alert != 0){
+      const p = document.createElement('p')
+      p.innerHTML = `<strong>EVENT: ${weatherinfo.alerts.alert[0].headline}</strong>`;
+    badweatherbanner.appendChild(p);
+    badweatherbanner.style.display = "inline-block";
+    }
+  });
+
+
+}
+
+function closeWeatherAlert(){
+  const badweatherbanner = document.querySelector(".weather-warning-banner");
+  badweatherbanner.style.display = "none";
+}
+
+
 
 function getId(firstDay, templesCount) {
   
@@ -171,26 +199,3 @@ function displayweather(temple, day, box, forecastday) {
 
   });
 };
-
-// function alert(temple, day, forecastday) {
-
-//   const APIurl = `https://api.weatherapi.com/v1/forecast.json?key=087fe58ffb314648b00140139221907&q=${temple.weatherId}&days=3&aqi=no&alerts=yes`;
-  
-//   fetch(APIurl, temple)
-//   .then((response) => response.json())
-//   .then((weatherinfo) => {
-    
-//     let alertsCount = Object.keys(weatherinfo.alerts.alert).length;
-
-//     console.log(`Alerts Count: ${alertsCount}`)
-    
-
-
-
-//     let msgType = weatherinfo.alerts.alert.msgtype
-
-//     if (msgType === "Alert") {
-//     console.log()
-//     };
-//   });
-// };

@@ -12,13 +12,12 @@
   </head>
 
   <body>
-        <header>
+      <header>
+        <div class="weather-warning-banner">
+          <p>☁ Weather Alert! Severe Weather Warning.<button onclick="closeWeatherAlert()">X</button></p>
+          
+        </div>
       <img class="header-logo" src="images/logo.webp" alt="TTI&S Logo">
-      <div class="date"></div>
-      <!-- <div class="alert"> -->
-        <!-- <h1>Special Weather Statement issued July 19 at 6:27PM MDT by NWS</h1>
-      </div>
-      <div class="alertBlur"></div> -->
       <div class="blurDiv"></div>
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
@@ -65,16 +64,18 @@
     </main>
         
     <footer>
+      <div class="footer">
+        <p>&copy;<span id="year"></span> The Temple Inns & Suites . All Rights Reserved | Elijah P. Whitchurch | WDD230 | Last Modification:  <span id="lastupdate"></span></p>
+        
+        <p>Thank you to <a href="https://www.weatherapi.com/">weatherapi.com</a> for the weather updates</p>
 
-      <p>&copy;<span id="year"></span> The Temple Inns & Suites . All Rights Reserved | Elijah P. Whitchurch | WDD230 | Last Modification:  <span id="lastupdate"></span></p>
-      
-      <p>Thank you to <a href="https://www.weatherapi.com/">weatherapi.com</a> for the weather updates</p>
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook social media link"></a>
+        <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube social media link"></a>
 
-      <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook social media link"></a>
-      <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube social media link"></a>
-
-      <script src="js/menu.js"></script>
-      <script src="js/spotlight.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/spotlight.js"></script>
+      </div>
     </footer>
+    
   </body>
 </html>
