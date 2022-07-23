@@ -1,7 +1,5 @@
 @media only screen and (min-width: 35rem) {
     
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Gentium+Basic:ital@0;1&family=Lato:wght@300&display=swap');
-
     :root {
         --color1: #1D3555;
         --color2: #C5F1FF ;
