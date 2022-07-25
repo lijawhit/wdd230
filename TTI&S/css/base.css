@@ -44,33 +44,6 @@ body a, p {
 
 /* HEADER */
 
-/* .alert {
-    display: grid;
-        position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    margin-top: -150px;
-    margin-left: -150px;
-    background: var(--color3);
-    z-index: 100;
-    padding: 1rem;
-    color: var(--color6);
-}
-
-.alertBlur {    
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: #000000;
-    filter: opacity(50%);
-    z-index: 200;
-} */
-
-
 header {
     grid-column: 1;
     grid-row: 2;
@@ -276,7 +249,7 @@ main h1 {
     padding: 0 30px 0 30px;
 }
 
-.hero button {
+.heroButton {
     grid-row: 3;
     grid-column: 1/-1;
     z-index: 1;
@@ -294,9 +267,26 @@ main h1 {
     color: var(--color5);
 }
 
-.hero button:hover {
+.heroButton:hover {
     background: var(--color9);
     cursor: pointer;
+    color: var(--color5);
+}
+
+.checkbox {
+    display: grid;
+    grid-row: 4;
+    margin-bottom: 1rem;
+}
+
+.checkbox p {
+    font-size: .1rem;
+    grid-column: 2;
+}
+
+#checkbox {
+    width: 20px;
+    place-self: center;
 }
 
 /* SPOTLIGHT TEMPLE */
@@ -913,24 +903,64 @@ form label textarea
 }
 
 .weather-warning-banner {
-    background-color: white;
     display: none;
-    padding: .1rem 1rem .1rem 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    background: var(--color3);
+    z-index: 100;
+    padding: 1rem;
+    color: var(--color6);
+    padding: 1rem;
+    text-align: center;
+    grid-template-rows: .2fr .4fr 1fr;
 }
 
-.weather-warning-banner button {
+.banner-button {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     background-color: white;
     border: none;
+    justify-self: end;
+}
+
+.weather-warning-banner h1 {
+    font-family: var(--font3);
+    color: var(--color4);
+    padding-bottom: .9rem;
 }
 
 .weather-warning-banner p {
+    font-size: .8rem;
+    color: var(--color4);
+    padding: 0;
+}
+
+.weather-warning-banner p:nth-child(2){
+    align-self: end;
     font-size: .8rem;
 }
 
 .weather-warning-banner button:hover { 
     background-color: var(--color5);
 }
+
+.alertBlur {   
+    display: none; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    filter: opacity(50%);
+    z-index: 80;
+}
+
 
 .services-darker a {
     text-decoration: none;

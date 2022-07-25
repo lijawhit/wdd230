@@ -1,6 +1,8 @@
-const requestURL = 'json/temples.json';
+export {getDays, getId};
 
-fetch(requestURL)
+const url = 'json/temples.json';
+
+fetch(url)
   .then(function (response) {
     return response.json();
   })
@@ -13,15 +15,12 @@ fetch(requestURL)
 
 function choosespotlight(temples){
 
-  const firstDay = new Date();
-  const secondDay = new Date(firstDay)
-  const thirdDay = new Date(firstDay)
-  const fourthDay = new Date(firstDay)
-  secondDay.setDate(secondDay.getDate() + 1)
-  thirdDay.setDate(thirdDay.getDate() + 2)
-  const day1 = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(firstDay);
-  const day2 = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(secondDay);  
-  const day3 = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(thirdDay);
+  let days = getDays()
+  console.log(days)
+  let firstDay = days[0]
+  let day1 = days[1]
+  let day2 = days[2]
+  let day3 = days[2]
 
   let templesCount = Object.keys(temples).length;
   let jsonTemple = getId(firstDay, templesCount)
@@ -33,35 +32,20 @@ function choosespotlight(temples){
   displayweather(temples[jsonTemple], day2, "box2", 1);
   displayweather(temples[jsonTemple], day3, "box3", 2);
 
-  badWeather(temples[jsonTemple])
-
 }
 
-function badWeather(temple) {
-  const APIAlerturl = `https://api.weatherapi.com/v1/forecast.json?key=087fe58ffb314648b00140139221907&q=${temple.weatherId}&days=3&aqi=no&alerts=yes`;
-  const badweatherbanner = document.querySelector(".weather-warning-banner");
-  
-  fetch(APIAlerturl)
-  .then((response) => response.json())
-  .then((weatherinfo) => {
-    // IF THERE IS BAD WEATHER
-    if(weatherinfo.alerts.alert != 0){
-      const p = document.createElement('p')
-      p.innerHTML = `<strong>EVENT: ${weatherinfo.alerts.alert[0].headline}</strong>`;
-    badweatherbanner.appendChild(p);
-    badweatherbanner.style.display = "inline-block";
-    }
-  });
+function getDays() {
+  const firstDay = new Date();
+  const secondDay = new Date(firstDay);
+  const thirdDay = new Date(firstDay);
+  secondDay.setDate(secondDay.getDate() + 1);
+  thirdDay.setDate(thirdDay.getDate() + 2);
+  const daya = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(firstDay);
+  const dayb = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(secondDay);  
+  const dayc = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(thirdDay);
 
-
+  return [firstDay, daya, dayb, dayc];
 }
-
-function closeWeatherAlert(){
-  const badweatherbanner = document.querySelector(".weather-warning-banner");
-  badweatherbanner.style.display = "none";
-}
-
-
 
 function getId(firstDay, templesCount) {
   
@@ -84,10 +68,10 @@ function getId(firstDay, templesCount) {
   let og = -1
   
   for (let value = 0; value < templesCount; value++) {
-    base = og + 1
-    templeMinutesList = [base]
+    let base = og + 1
+    let templeMinutesList = [base]
     for (let value = 0; value < listLength; value++) {
-      minute = base + templesCount
+      let minute = base + templesCount
       templeMinutesList.push(minute)
       base = minute
     }
@@ -102,17 +86,17 @@ function getId(firstDay, templesCount) {
 
   for (let value = 0; value < templesCount; value++) {
         
-    minutes = allLists[value];
+    let minutes = allLists[value];
 
-    listId = value
+    let listId = value
 
-    minutesLength = minutes.length;
+    let minutesLength = minutes.length;
     
     console.log(`List ID: ${listId}\nMinutes in List: ${minutes}`)
 
     for (let value = 0; value < minutes.length; value++) {
 
-      minute = minutes[value]
+      let minute = minutes[value]
 
       console.log(minute)
       if ((`${minute}`) == (`${time}`)) {
@@ -132,7 +116,7 @@ function displayspotlight(temple) {
   let img = document.createElement('img');
   let p = document.createElement('p');
 
-  h2.innerHTML = `Temple Highlight<br><em>${temple.city}, ${temple.country}</em>`
+  h2.innerHTML = `Temple Highlight<br><em>${temple.city}, ${temple.country}</em>`;
 
   img.setAttribute('src', temple.image);
   img.setAttribute('alt', `Icon image for ${temple.name}`);
@@ -140,8 +124,9 @@ function displayspotlight(temple) {
 
   p.textContent = temple.about;
 
-  document.querySelector('.spotlight-temple').appendChild(h2);
   
+
+  document.querySelector('.spotlight-temple').appendChild(h2);
   document.querySelector('.spotlight-temple').appendChild(img);
   document.querySelector('.spotlight-temple').appendChild(p);
   

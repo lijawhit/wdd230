@@ -13,10 +13,16 @@
 
   <body>
       <header>
-        <div class="weather-warning-banner">
-          <p>☁ Weather Alert! Severe Weather Warning.<button onclick="closeWeatherAlert()">X</button></p>
-          
-        </div>
+      <div class="weather-warning-banner">
+        <span class="banner-button">X</span>
+        <h1>WEATHER ALERT</h1>
+        <!-- <div class="checkbox">
+          <input type="checkbox" id="checkbox" name="yes" value='1'>
+          <p>Check to permanently close</p>
+        </div> -->
+
+      </div>
+      <div class="alertBlur"></div>
       <img class="header-logo" src="images/logo.webp" alt="TTI&S Logo">
       <div class="blurDiv"></div>
       <div class="menu-btn">
@@ -36,9 +42,7 @@
         <img src="images/temples/washington-dc.jpg" alt="Washington DC Temple">
         <h1>The Temple Inns & Suites</h1>
         <p>Accommodating hundreds of members near temples worldwide </p>
-        <form action="reservation.html">
-          <button>BOOK NOW</button>
-        </form>
+        <div class="heroButton"><a href="reservation.html">BOOK NOW</a></div>
         
       </div>
 
@@ -71,9 +75,10 @@
 
         <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook social media link"></a>
         <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube social media link"></a>
-
+        
         <script src="js/menu.js"></script>
-        <script src="js/spotlight.js"></script>
+        <script type="module" src="js/alert.js"></script>
+        <script type="module" src="js/spotlight.js"></script>
       </div>
     </footer>
     
