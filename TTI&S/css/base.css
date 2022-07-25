@@ -500,8 +500,6 @@ footer a {
     grid-row: 2;
 }
 
-
-
 /* dedicated */
 .cards section dl  dt:nth-child(7),
 .cards section dl  dd:nth-child(8) {
@@ -608,21 +606,18 @@ background-color: #58c0fc;
     padding: .5rem;
 }
 
-.form-page img
-{
+.form-page img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.form-page form h2
-{
+.form-page form h2 {
     text-align: center;
     color: var(--color4);
 }
 
-.form-page form
-{
+.form-page form {
     margin: 2em 1em;
     padding: 1em;
     background: linear-gradient( var(--color7) ,  var(--color9) 20%, var(--color8));
@@ -631,16 +626,14 @@ background-color: #58c0fc;
     margin: 0 auto 0;
 }
 
-form label 
-{
+form label {
     padding-top: 1rem;
     display: block;
     font-size: 1rem;
     color: var(--color4);
 }
 
-form label input 
-{
+form label input {
     display: block;
     width: 100%;
     max-width: 25rem;
@@ -651,20 +644,20 @@ form label input
 form label input, form label select, form label textarea{
     background-color: rgb(221, 239, 252);
 }
+
 form label input:required{
     border-top: red solid 6px;
 }
+
 form label input:required:valid{
     border-top: lime solid 6px;
 }
 
-.form-container
-{
+.form-container {
     margin: 0 1em 1em 1em;
 }
 
-form label select
-{
+form label select {
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -675,7 +668,6 @@ form label select
     left: 50%;
     transform: translate(-50%, 0);
     border-radius: 0.5em;
-
 }
 
 .signupbtn {
@@ -691,15 +683,13 @@ form label select
     color: var(--color5);
 }
 
-
 .signupbtn:hover {
     background: var(--color5);
     color: var(--color9);
     cursor: pointer;
 }
 
-#location
-{
+#location {
     margin-left:2.1em;
     margin-top: .5rem;
     width: 71%;
@@ -721,13 +711,11 @@ form label select
     grid-column: 1;
 }
 
-form label textarea
-{
+form label textarea {
     width: 100%;
     margin-top: 0.5em;
     border-radius: 4px;
 }
-
 
 /* SERVICES */
 
@@ -748,8 +736,6 @@ form label textarea
     cursor: pointer;
     margin: 2em 0;
     border-radius: 0.5em;
-    
-
 }
 
 .services button:hover {
@@ -766,6 +752,7 @@ form label textarea
 
 .services img {
     width: 100%;
+    border-radius: 0.5em;
 }
 
 .services div {
@@ -791,11 +778,9 @@ form label textarea
     justify-self: flex-end;
 }
 
-
 .button-right {
     text-align: center;
 }
-
 
 .reception-food-stack {
     color: var(--color4);
@@ -813,7 +798,6 @@ form label textarea
     width: 100%;
     box-shadow: 5px 5px 10px var(--color4);
     border-radius: 0.5em;
-
 }
 
 .reception-food-stack h2 {
@@ -834,7 +818,6 @@ form label textarea
     box-shadow: 5px 5px 10px var(--color4);
     border-radius: 0.5em;
 }
-
 
 .missionary-stack {
     color: var(--color4);
